@@ -1,0 +1,63 @@
+body{
+    background-image: url(../HTML/facebook1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+a{
+    text-decoration-line: none;
+}
+h1{
+    padding-top: 10px;  
+    margin: 0px;
+}
+p{
+    margin: 0px;
+}
+div{
+    align-items: center;
+    box-sizing: border-box;
+    box-sizing: 0px 0px 10px rgba(0, 0, 0, 0.363);
+    height: 700px;
+    width: 400px;
+    background-color: white;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.407);
+    border-radius: 10px;
+}
+fieldset{
+    width: 90px;
+    border-radius: 10px;
+    display: inline;
+    margin-left: 10px;
+}
+select{
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;  
+    margin-left: 5px;  
+}
+.ip1{
+    margin-left: 10px;  
+    width: 170px;
+    height: 35px;
+    border-radius: 10px;
+    border-color: rgba(0, 0, 0, 0.318);
+    background-color: rgba(0, 0, 0, 0.118);
+}
+.ip2{
+    margin-left: 20px;  
+    width: 350px;
+    height: 35px;
+    border-radius: 10px;
+    border-color: rgba(0, 0, 0, 0.318);
+    background-color: rgba(0, 0, 0, 0.118);
+}
+button{
+    font-size: 20px;
+    background-color: green;
+    color: white;
+    margin-left: 100px;
+    width: 200px;
+    border-radius: 10px;
+    border-color: rgba(0, 0, 0, 0.129);
+}

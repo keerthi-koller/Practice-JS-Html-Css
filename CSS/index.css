@@ -1,0 +1,26 @@
+h1{
+    color: aliceblue;
+}
+
+p{
+    color: antiquewhite;
+}
+
+span{
+    color: aqua;
+}
+
+input{
+    color: black;
+    background-color: red;
+}
+
+button{
+    color: red;
+    background-color: blue;
+}
+
+a{
+    color: brown;
+    background-color: blueviolet;
+}

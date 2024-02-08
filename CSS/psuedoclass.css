@@ -1,0 +1,84 @@
+/* div{
+    background-color: gold;
+    width: 150px;
+    height: 150px;
+    margin: 30px auto;
+    transition: 3s;
+}
+div:hover{
+    background-color: crimson;
+    width: 800px;
+    height: 960px;
+    border-radius: 75px;
+    transition: 30s;
+    transform: 30s;
+} */
+/* button{
+    background-color: rgb(71, 209, 244);
+    color: white;
+    padding: 5px 13px;
+    border: solid 1px rgb(71, 209, 244);
+    border-radius: 20px;
+    transition: 0.3s;
+}
+button:active{
+    background-color: white;
+    color: rgb(71, 209, 244);
+    border: solid 1px rgb(71, 209, 244);
+    transition: 0.3s;
+} */
+a{
+    color: green;
+    text-decoration-line: none;
+}
+a:visited{
+    color: yellow;
+    text-decoration-line: underline;
+}
+input{
+    border: solid 2px rgb(131, 131, 131);
+    border-radius: 8px;
+}
+input:focus{
+    border: solid 2px rgb(71, 209, 244);
+    outline: solid 2px rgba(162, 225, 241, 0.507);
+    background-color: white;
+}
+h1{
+    text-align: center;
+    color: crimson;
+    letter-spacing: 10px;
+    word-spacing: 20px;
+    transition: 2s;
+}
+h1:hover{
+    color: blue;
+    transition: 2s;
+    letter-spacing: 20px;
+    word-spacing: 30px;
+}
+div button{
+    color: white;
+    padding: 5px 13px;
+    border-radius: 20px;
+    transition: 0.3s;
+    display: block;
+    margin: 20px;
+}
+div button:first-child{
+    background-color: rgb(71, 209, 244);
+    border: solid 1px rgb(71, 209, 244);
+}
+div button:nth-child(2){
+    background-color: rgb(71, 244, 85);
+    border: solid 1px rgb(71, 244, 85);
+}
+
+div button:last-child{
+    background-color: rgb(244, 71, 143);
+    border: solid 1px rgb(244, 71, 143);
+}
+div>button{
+    background-color: rgb(71, 186, 244);
+    border: solid 1px rgb(71, 186, 244);
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        h1{
+            text-align: center;
+            color: crimson;
+        }
+        form{
+            background-color: rgb(188, 212, 255);
+            width: 400px;
+            height: auto;
+            padding: 10px;
+            margin: 30px auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.422);
+        }
+        input{
+            font-size: 15px;
+            display: block;
+            width: 90%;
+            height: 40px;
+            margin: 10px auto;
+            border: none;
+            border-radius: 2px; 
+            font-weight: bold;
+            text-align: center;
+        }
+        input[type="submit"]{
+            background-color: black ;
+            color: white;
+        }
+        span{
+            display: none;
+            /* visibility: hidden;
+            display: block; */
+            width: 90%;
+            margin: auto;
+            color: red;
+            font-size: 14px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form Validation</h1>
+    <hr>
+    <form action="../signup--login.html" onsubmit="return handleSubmit()">
+
+        <input type="text" placeholder="Username" id="uName">
+        <span>Please enter username between 8-16 char & don't include any spl char</span>
+        
+        <input type="text" placeholder="Email id" id="uEmail">
+        <span>Please enter a valid mail id</span>
+        
+        <input type="password" placeholder="Password" id="uPass">
+        <span>Please enter atleat 1 Uppercase, 1 Lowercase, 0-9 numbers and any spl char between 8-16</span>
+        
+        <input type="text" placeholder="Confirm Password" id="uConfirmPass">
+        <span>Password mismatch</span>
+        
+        <input type="date" id="uDate">
+        <span>Sorry can't login, Your age should be greater than 8</span>
+        
+        <input type="submit" value="Login">
+    </form>
+
+    <script>
+        let reset = ()=>
+        {
+            uName.nextElementSibling.style.display = "none";
+            uEmail.nextElementSibling.style.display = "none";
+            uPass.nextElementSibling.style.display = "none";
+            uConfirmPass.nextElementSibling.style.display = "none";
+            uDate.nextElementSibling.style.display = "none";
+        }
+
+
+        let handleSubmit = ()=>
+        {
+            let uName = document.getElementById("uName");
+            let uEmail = document.getElementById("uEmail");
+            let uPass = document.getElementById("uPass");
+            let uConfirmPass = document.getElementById("uConfirmPass");
+            let uDate = document.getElementById("uDate");
+
+            uName.nextElementSibling.style.display = "none";
+            uEmail.nextElementSibling.style.display = "none";
+            uPass.nextElementSibling.style.display = "none";
+            uConfirmPass.nextElementSibling.style.display = "none";
+            uDate.nextElementSibling.style.display = "none";
+
+            let result = true;  //initially assuming all the inputs are valid.
+
+            //to verify only uName
+            for (let i = 0; i < uName.value.length; i++) 
+            {
+                let code = uName.value.charCodeAt(i);
+                if ( !( (code>=65 && code<=90) || (code>=97 && code<=122) ) )
+                {
+                    result = false;
+                    uName.nextElementSibling.style.display = "block";
+                }
+            }
+
+            //to verify length in a range 8-16
+            if ( uName.value.length<8 || uName.value.length>16 )
+            {
+                result = false;
+                uName.nextElementSibling.style.display = "block";
+            }
+
+            //to validate the email format
+            if (uEmail.value.includes("@")==false || uEmail.value.endsWith("@")==true || uEmail.value.startsWith("@")==true)
+            {
+                result = false;
+                uEmail.nextElementSibling.style.display = "block";
+            }
+
+            //to validate the password
+            let upper = 0;
+            let lower = 0;
+            let digit = 0;
+            let special = 0;
+
+            for (let i = 0; i < uPass.value.length; i++) 
+            {
+                let code = uPass.value.charCodeAt(i);
+                if (code>=65 && code<=90)
+                {
+                    upper++;
+                }       
+                else if (code>=97 && code<=122)
+                {
+                    lower++;
+                }
+                else if (code>=48 && code<=57)
+                {
+                    digit++;
+                }
+                else
+                {
+                    special++
+                }
+            }
+
+            if ( upper==0 || lower==0 || digit==0 || special==0 || uPass.value.length<8 || uPass.value.length>16 )
+            {
+                result = false;
+                uPass.nextElementSibling.style.display = "block";
+            }
+
+            //to validate confirm password
+            if (uConfirmPass.value != uPass.value)
+            {
+                result = false;
+                uConfirmPass.nextElementSibling.style.display = "block";
+            }
+
+            //to validate age should be 8 to 16
+            let date = new Date (uDate.value);
+            if (date.getFullYear() >= 2015)
+            {
+                result = false;
+                uDate.nextElementSibling.style.display = "block";
+            }
+
+
+            return result;
+        }
+        
+    </script>
+</body>
+</html>
+
+

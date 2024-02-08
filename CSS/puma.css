@@ -1,0 +1,608 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}   
+#div1{
+    background-color: gray;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+}
+#div2{
+    background-color: black;
+    display: flex;
+}
+#div2 img{
+    width: 100px;
+    height: 60px;
+    margin-left: 50px;
+}
+#nav ul{
+    display: flex;
+    list-style: none;
+}
+#nav ul li{
+    margin-right: 25px;
+    padding-top: 20px;
+}
+#nav ul li a{
+    text-decoration-line: none;
+    color: white;
+}
+#nav ul li .sub{
+    display: flex;
+    background-color: black;
+    width: 100vw;
+    height: 400px;
+    display: none;
+    line-height: 20px;
+}
+#nav ul li .sub .sub1 ul{
+    margin-right: 50px;
+    display: block;
+}
+#nav ul li:hover > .sub{
+    display: flex;
+    transition: 3s;
+    position: absolute;
+    z-index: 80;
+    height: 100px;
+    width: 100vw;
+    background-color: white;
+}
+#nav ul li:hover > .sub a{
+    color: black;
+}
+#div2 i:nth-child(3){
+    font-size: 30px;
+    margin-top: 15px;
+    position: absolute;
+    left: 1000px;
+    z-index: 50;
+    color: white;
+}
+#div2 input{
+    width: 200px;
+    height: 40px;
+    margin-left: 200px;
+    margin-top: 10px;
+    background-color: black;
+    border: solid 1px rgb(130, 101, 101);
+    position: relative;
+    z-index: 40;
+}
+#div2 input::placeholder{
+    padding-left: 50px;
+    color: rgb(196, 179, 179);
+}
+#div2 i:nth-child(5){
+    margin-left: 50px;
+    margin-top: 15px;
+    font-size: 30px;
+    color: white;
+}
+#div2 i:nth-child(6){
+    margin-left: 50px;
+    margin-top: 15px;
+    font-size: 30px;
+    color: white;
+}
+#div2 i:last-child{
+    margin-left: 50px;
+    margin-top: 15px;
+    font-size: 30px;
+    color: white;
+}
+#section1{
+    background: url(../../../../Downloads/pumabg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+#div3{
+    margin-top: -50px;
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    z-index: 50;
+}
+#div3 h1{
+    font-size: 45px;
+    color: white;
+}
+#div3 #d123{
+margin-top: 30px;
+}
+#div3 #d123 span{
+    font-size: 40px;
+    margin-right: 60px;
+    color: white;
+}
+#div3 #d123 span:first-child{
+    margin-left: 20px;
+}
+#div3 #hms span{
+    font-size: 23px;
+    margin-right: 20px;
+    color: white;
+}
+#div3 #mwk button{
+    margin: 20px 10px;
+    width: 90px;
+    height: 40px;
+    background-color: white;
+    border: none;
+    font-weight: bold;
+}
+#div3{
+    position: absolute;
+    right: 0px;
+    top: 200px;
+}
+section h1:nth-child(2){
+    margin: 50px;
+}
+#section2{
+    margin-left: 100px;
+    display: flex;
+    justify-content: space-between;
+    width: 150vw;
+}
+#section2 .div4 img:first-child{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+}
+#section2 .div4 p:nth-child(2){
+    background-color: rgb(184, 64, 64);
+    color: white;
+    width: 50px;
+    height: 25px;
+    border-radius: 4px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+#section2 .div4 span:nth-child(3){
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    top: 340px;
+    left: 0px;
+}
+#section2 .div4 i:nth-child(4){
+    color: brown;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    top: 340px;
+    left: 30px;
+}
+#section2 .div4 span:nth-child(5){
+    color: brown;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    top: 340px;
+    left: 30px;
+}
+#section2 .div4 i:nth-child(6){
+    color: rgba(0, 0, 0, 0.304);
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    top: 365px;
+    left: -25px;
+}
+#section2 .div4 del:nth-child(7){
+    color: rgba(0, 0, 0, 0.192);
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    top: 365px;
+    left: -25px;
+}
+hr{
+    position: relative;
+    top: 400px;
+    border: solid 2px rgba(0, 0, 0, 0.273);
+}
+#section3{
+    position: relative;
+    top: 450px;
+    background-image: url(../../../../Downloads/pumabg2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+#section3 #div5{
+    width: 500px;
+    height: 400px;
+    text-align: center;
+    color: white;
+    padding-top: 150px;
+}
+#section3 #div5 h1{
+    font-size: 40px;
+}
+#section3 #div5 h2{
+    font-size: 20px;
+}
+#section3 #div5 button{
+    margin-top: 40px;
+    font-size: 15px;
+    width: 200px;
+    height: 50px;
+    font-weight: bold;
+    background-color: white;
+    border: none;
+}
+#section4{
+    position: relative;
+    top: 455px;
+    background-image: url(../../../../Downloads/pumabg3.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+}
+#section4 #div6{
+    width: 500px;
+    height: 400px;
+    text-align: center;
+    color: white;
+    padding-top: 150px;
+    position: absolute;
+    left: 1050px;
+}
+#section4 #div6 h1{
+    font-size: 40px;
+}
+#section4 #div6 button{
+    margin-top: 40px;
+    font-size: 15px;
+    width: 200px;
+    height: 50px;
+    font-weight: bold;
+    background-color: white;
+    border: none;
+}
+#section5{
+    position: relative;
+    top: 460px;
+    background-image: url(../../../../Downloads/pumabg4.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+}
+#section5 #div7{
+    width: 500px;
+    height: 400px;
+    text-align: center;
+    color: white;
+    padding-top: 150px;
+    position: absolute;
+    left: 500px;
+}
+#section5 #div7 h1{
+    font-size: 40px;
+}
+#section5 #div7 button{
+    margin-top: 40px;
+    font-size: 15px;
+    width: 200px;
+    height: 50px;
+    font-weight: bold;
+    background-color: white;
+    border: none;
+}
+#section6{
+    position: relative;
+    top: 465px;
+    background-image: url(../../../../Downloads/pumabg5.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+}
+#section6 #div8{
+    width: 500px;
+    height: 400px;
+    text-align: center;
+    color: white;
+    padding-top: 150px;
+    position: absolute;
+    left: 0px;
+}
+#section6 #div8 h1{
+    font-size: 40px;
+}
+#section6 #div8 button{
+    margin-top: 40px;
+    font-size: 15px;
+    width: 200px;
+    height: 50px;
+    font-weight: bold;
+    background-color: white;
+    border: none;
+}
+#section7{
+    position: relative;
+    top: 470px;
+    background-image: url(../../../../Downloads/pumabg6.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+#section7 #div9{
+    width: 500px;
+    height: 400px;
+    text-align: center;
+    color: white;
+    padding-top: 150px;
+}
+#section7 #div9 h1{
+    font-size: 50px;
+}
+#section7 #div9 h2{
+    font-size: 25px;
+}
+#section7 #div9 button{
+    margin-top: 40px;
+    font-size: 15px;
+    width: 200px;
+    height: 50px;
+    font-weight: bold;
+    background-color: white;
+    border: none;
+}
+#section8{
+    position: relative;
+    top: 475px;
+    background-image: url(../../../../Downloads/pumabg7.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+#section8 #div10{
+    width: 500px;
+    height: 400px;
+    text-align: center;
+    color: white;
+    padding-top: 150px;
+}
+#section8 #div10 h1{
+    font-size: 50px;
+}
+#section8 #div10 h2{
+    font-size: 25px;
+}
+#section8 #div10 button{
+    margin-top: 40px;
+    font-size: 15px;
+    width: 200px;
+    height: 50px;
+    font-weight: bold;
+    background-color: white;
+    border: none;
+}
+#section9{
+    position: relative;
+    top: 480px;
+    background-image: url(../../../../Downloads/pumabg8.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+#section9 #div11{
+    width: 500px;
+    height: 400px;
+    text-align: center;
+    color: black;
+    padding-top: 150px;
+    position: absolute;
+    left: 1000px;
+}
+#section9 #div11 h1{
+    font-size: 50px;
+}
+#section9 #div11 h2{
+    font-size: 25px;
+}
+#section9 #div11 button{
+    margin-top: 40px;
+    font-size: 15px;
+    width: 200px;
+    height: 50px;
+    font-weight: bold;
+    background-color: black;
+    border: none;
+    color: white;
+}
+#section10{
+    position: relative;
+    top: 510px;
+    /* background-image: url(../../../../Downloads/pumabg9.mp4); */
+    /* background-repeat: no-repeat; */
+    /* background-size: 100vw; */
+    /* height: 500px; */
+}
+#section10 #div12{
+    width: 500px;
+    height: 400px;
+    text-align: left;
+    color: white;
+    padding-top: 150px;
+    position: absolute;
+    top: 100px;
+    margin-left: 50px;
+}
+#section10 #div12 h1{
+    font-size: 50px;
+}
+#section10 #div12 h2{
+    font-size: 25px;
+}
+#section10 #div12 button{
+    margin-top: 40px;
+    font-size: 15px;
+    width: 200px;
+    height: 50px;
+    font-weight: bold;
+    background-color: black;
+    border: none;
+    color: white;
+}
+#section11{
+    position: relative;
+    top: 550px;
+    background-image: url(../../../../Downloads/pumabg10.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+#section11 #div13{
+    width: 500px;
+    height: 400px;
+    text-align: center;
+    color: black;
+    padding-top: 150px;
+    position: absolute;
+    left: 1000px;
+}
+#section11 #div13 h1{
+    font-size: 50px;
+}
+#section11 #div13 h2{
+    font-size: 25px;
+}
+#section11 #div13 button{
+    margin-top: 40px;
+    font-size: 15px;
+    width: 200px;
+    height: 50px;
+    font-weight: bold;
+    background-color: black;
+    border: none;
+    color: white;
+}
+#section12{
+    position: relative;
+    top: 570px;
+    background-image: url(../../../../Downloads/pumabg11.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+#section12 #div14{
+    width: 500px;
+    height: 400px;
+    text-align: center;
+    color: white;
+    padding-top: 150px;
+    position: absolute;
+    left: 10px;
+}
+#section12 #div14 h1{
+    font-size: 50px;
+}
+#section12 #div14 h2{
+    font-size: 25px;
+}
+#section12 #div14 h4{
+    font-size: 18px;
+}
+#section12 #div14 button{
+    margin-top: 40px;
+    font-size: 15px;
+    width: 200px;
+    height: 50px;
+    font-weight: bold;
+    background-color: black;
+    border: none;
+    color: white;
+}
+footer{
+    background-color: gray;
+}
+#fhr1{
+    /* margin-top: 200px; */
+    display: flex;
+    width: 1400px;
+    border: solid 0px rgb(242, 227, 227);
+    margin: 250px auto;
+}
+#fhr1 hr:first-child{
+    margin-right: 10px;
+    width: 500px;
+}
+#fhr1 hr:nth-child(2){
+    margin-right: 10px;
+    width: 500px;
+}
+#fhr1 hr:last-child{
+    margin-right: 10px;
+    width: 500px;
+}
+#footer1{
+    display: flex;
+    margin-top: 400px;
+    margin-left: 100px;
+}
+#footer1 .fdiv1{
+    width: 300px;
+    height: 500px;
+    line-height: 30px;
+}
+#footer1 .fdiv1 h3{
+    color: white;
+    line-height: 100px;
+}
+#footer1 .fdiv1 a{
+    color: rgba(255, 255, 255, 0.666);
+    display: block;
+    text-decoration-line: none;
+}
+#footer1 .fdiv1 a:hover{
+    color: white;
+}
+#footer1 .fdiv2{
+    width: 300px;
+    height: 500px;
+    line-height: 30px;
+    margin-top: 100px;
+}
+#footer1 .fdiv2 a{
+    color: rgba(255, 255, 255, 0.666);
+    display: block;
+    text-decoration-line: none;
+}
+#footer1 .fdiv2 a:hover{
+    color: white;
+}
+#fdiv3{
+    margin-top: 100px;
+    /* display: flex; */
+}
+#fdiv3 img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: white;
+    margin-top: 12px;
+}
+#fdiv3 select{
+    width: 300px;
+    height: 50px;
+    background-color: black;
+    color: white;
+}
+#fdiv3 hr:nth-child(3){
+    display: block;
+}
+#fdiv3 span:nth-child(4){
+    display: block;
+}

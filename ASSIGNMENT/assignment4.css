@@ -1,0 +1,67 @@
+body{
+    background-color: aliceblue;
+}
+
+div{
+    box-sizing: border-box;
+    background-color: white;
+    height: 400px;
+    width: 380px;
+    margin: 0px 0px 0px 10px;
+    padding: 45px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);
+}
+
+input{
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+#fb{
+    color: blue;
+    font-size: 100px;
+    text-align: left;
+    margin: 0px;
+}
+
+p{
+    margin: 0px;
+    text-align: left;
+    font-size: 30px;
+}
+
+#end{
+    margin-left: 10px;
+}
+
+#button2{
+    background-color: green;
+    height: 40px;
+    width: 180px;
+    border-radius: 20px;
+}
+
+#123{
+    color: white;
+}
+
+#bn{
+    font-size: 20px;
+}
+
+#bn1{
+    font-size: 15px;
+}
+
+#button1{
+    background-color: blue;
+    height: 40px;
+    width: 300px;
+    border-radius: 20px;
+}
+
+a{
+    text-decoration-line: none;
+}

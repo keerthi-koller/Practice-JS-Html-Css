@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        h1{
+            text-align: center;
+            color: crimson;
+        }
+        #form{
+            background-color: rgb(188, 212, 255);
+            width: 400px;
+            height: auto;
+            padding: 10px;
+            margin: 30px auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.422);
+        }
+        input{
+            font-size: 15px;
+            display: block;
+            width: 90%;
+            height: 40px;
+            margin: 10px auto;
+            border: none;
+            border-radius: 2px; 
+            font-weight: bold;
+            text-align: center;
+        }
+        /* input[type="submit"]{
+            background-color: black ;
+            color: white;
+        } */
+        button{
+            background-color: black ;
+            color: white;
+            font-size: 15px;
+            display: block;
+            width: 90%;
+            height: 40px;
+            margin: 10px auto;
+            border: none;
+            border-radius: 2px; 
+            font-weight: bold;
+            text-align: center;
+        }
+        span{
+            display: none;
+            /* visibility: hidden;
+            display: block; */
+            width: 90%;
+            margin: auto;
+            color: red;
+            font-size: 14px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form Validation</h1>
+    <hr>
+    <div id="form">
+        <input type="text" placeholder="Username" id="uName">
+        <span>Please enter username between 8-16 char & don't include any spl char</span>
+        
+        <input type="email" placeholder="Email id" id="uEmail">
+        <span>Please enter a valid mail id</span>
+        
+        <input type="password" placeholder="Password" id="uPass">
+        <span>Please enter atleat 1 Uppercase, 1 Lowercase, 0-9 numbers and any spl char between 8-16</span>
+        
+        <input type="text" placeholder="Confirm Password" id="uConfirmPass">
+        <span>Password mismatch</span>
+        
+        <input type="date" id="uDate">
+        <span>Sorry can't login, Your age should be greater than 8</span>
+        
+        <!-- <input type="submit" value="Login"> -->
+        <button onclick="handleSubmit()">Login</button>
+    </div>
+
+    <script>
+        let handleSubmit = () =>
+        {
+            //write a logic to check a digit is present inside the uName or not
+
+            let numbers = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 ];
+            let splchar = [ '<', '>', '@', '!', '#', '$', '%', '^', '&', '*', '(', ')', '_', '+', '[', ']', '{', '}', '?', ':', ';', '|', '\'', '\"', '\\', ',', '.', '/', '~', '`', '-', '=' ];
+            let salpha = [ 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' ];
+            let calpha = [ 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' ];
+
+
+            let uName = document.getElementById("uName").value;
+            let unnum = numbers.every( (num) => { return !uName.includes(num) } );
+            let unsplc = splchar.every( (char) => { return !uName.includes(char) } );
+            let unlen = ( (uName.length>=8 && uName.length<=16) ? true : false );
+            let nameN = ( (unnum==unsplc && unsplc==unlen && unlen==true) ? "true" : "wrong credential--->Username" );
+            alert(`username ${nameN}`);
+
+            let uEmail = document.getElementById("uEmail").value;
+            let emailN = ( (uEmail.substring(uEmail.length-10, uEmail.length) == "@gmail.com") ? "true" : "wrong credential--->mail id" );
+            alert(`email ${emailN}`);
+
+            let uPass = document.getElementById("uPass").value;
+            let upnum = numbers.some( (num) => { return uPass.includes(num) } );
+            let upsplc = splchar.some( (char) => { return uPass.includes(char) } );
+            let upsalp = salpha.some( (char) => { return uPass.includes(char) } );
+            let upcalp = calpha.some( (char) => { return uPass.includes(char) } );
+            let uplen = ( (uPass.length>=8 && uPass.length<=16) ? true : false );
+            let passN = ( (upnum==upsplc && upsplc==upsalp && upsalp==upcalp && upcalp==uplen && uplen==true) ? "true" : "wrong credential--->password" );
+            alert(`password ${passN}`);
+
+            let uConfirmPass = document.getElementById("uConfirmPass").value;
+            let conPN = ( (uConfirmPass == uPass) ? "true" : "wrong credential--->confirmPassword" );
+            alert(`conPass ${conPN}`);
+
+            let uDate = new Date(document.getElementById("uDate").value);
+            let Maxdate = new Date(2015, 0, 1);
+
+            let dateN = ( ( uDate.getFullYear() <= Maxdate.getFullYear() ) ? "true" : "wrong credential--->dateOfBirth" );
+            alert(`date ${dateN}`);
+
+            alert( (nameN==passN && passN==conPN && conPN==dateN && dateN=="true") ? "registration successful" : "please enter valid information" );
+
+        }
+        
+    </script>
+</body>
+</html>

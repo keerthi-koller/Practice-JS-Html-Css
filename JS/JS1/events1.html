@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- property event handling -->
+    <h1> header tag </h1>
+    <button id="btn"> click </button>
+
+    <script>
+        // event handling using attribute
+        // <button onclick="sample()" id="btn">click</button>      
+
+
+        // event handling using property
+        let btn = document.getElementById("btn");
+        btn.onclick = sample;
+        // btn.onclick = sample();
+        function sample()
+        {
+            let h1 = document.querySelector("h1");
+            h1.style.color = "aqua";
+            h1.style.backgroundColor = "red"
+        }
+    </script>
+</body>
+</html>

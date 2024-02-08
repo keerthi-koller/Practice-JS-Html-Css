@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 500px;
+            height: 500px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #secondhand{
+            background: linear-gradient(black 0%, black 55%, transparent 55%, transparent 100%);
+            width: 5px;
+            height: 300px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #minutehand{
+            background: linear-gradient(black 0%, black 55%, transparent 55%, transparent 100%);
+            width: 5px;
+            height: 250px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #hourhand{
+            background: linear-gradient(black 0%, black 55%, transparent 55%, transparent 100%);
+            width: 5px;
+            height: 150px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #dot{
+            background-color: red;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+    </style>
+</head>
+<body>
+
+    <img src="./images/clock.png">
+
+    <div id="secondhand"></div>
+    <div id="minutehand"></div>
+    <div id="hourhand"></div>
+    <div id="dot"></div>
+
+    <script>
+        function changeTime()
+        {
+            let current = new Date();
+            let seconds = current.getSeconds();
+            let minutes = current.getMinutes();
+            let hours = current.getHours();
+
+            let secondhand = document.getElementById("secondhand");
+            secondhand.style.transform = `translate(-50%, -50%) rotate( ${seconds*6}deg )`;
+
+            let minutehand = document.getElementById("minutehand");
+            minutehand.style.transform = `translate(-50%, -50%) rotate( ${minutes*6}deg )`;
+
+            let hourhand = document.getElementById("hourhand");
+            hourhand.style.transform = `translate(-50%, -50%) rotate( ${(hours*30) + (minutes*0.5)}deg )`;
+
+        }
+
+        setInterval( () => { changeTime() }, 1000 );
+
+    </script>
+
+
+</body>
+</html>

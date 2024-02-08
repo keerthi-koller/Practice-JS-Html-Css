@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1 align="center">Tag manipulation</h1>
+    <hr>
+    <h3 id="head3">Skills</h3>
+    <ol>
+        <li>Java</li>
+        <li>Web</li>
+        <li>Sql</li>
+    </ol> -->
+
+    <label>Name</label> <input type="text" id="name">
+    <label>DOB</label> <input type="date" id="dob">
+
+    <button onclick="sample1()">check output</button>
+
+    <!-- <div id="result">
+
+    </div> -->
+
+    <script>
+        function sample1()
+        {
+            let name = document.getElementById("name").value;
+            let dob = document.getElementById("dob").value;
+
+            let currentYear = new Date().getFullYear();
+            let bornYear = new Date(dob).getFullYear();
+            let age = currentYear - bornYear;
+
+            let head = document.createElement("h1");
+            head.innerText = `Hello ${name} your age is ${age}`;
+            // let div = document.getElementById("result");
+            // div.append(head);
+            document.querySelector("body").append(head);
+        }
+
+    </script>
+</body>
+</html>

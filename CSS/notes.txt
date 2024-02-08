@@ -1,0 +1,105 @@
+IMPLEMENTATION
+we can apply CSS in three diffrent ways
+inline CSS
+internal css
+external css
+
+1. inline css = when structure and style declaration is in same line we call it as inline css.
+Syntax: <tag style="properties:value;"/>
+
+2.internal css = when structure and style decalration are in the same document we call it as internal CSS
+Syntax: <style> 
+            Selector{
+                property : value;
+            }
+        </style>
+
+3.external css = when structure and style declaration are in the different document we call it as external css.
+external css is used in development mode because it is easy to handle, understand and manipulate the document, and one css document can be used for multiple html documents.
+Syntax: INSIDE THE CSS document
+       selector{
+        property:value;
+       }
+
+       text styling :
+       color : color name / code
+       > to apply text color
+       letter spacing px:
+       word spacing px:
+       > to apply space between letters and words
+
+       font size:px= to vary the text size
+       font-weigth:normal/bold= to apply or remove boldness
+       font-family:family value= to vary the tapography
+       font style:italic/normal= to vary the stylng of text.
+       text-align:center left right= to apply the alignment to the text
+       text-decoration:orange underline dotted 10px;
+       > to apply line for the text.
+       > type of line, color, style, thickness
+
+       text-shadow: = x y z color name;
+       to apply shadow effect
+       text-indent:= to apply initial space for the text
+
+
+       BOX MODEL
+       1.Background = gradient
+       2.Dimensions = width, heigth
+       3.Spacings = inside-padding, outside-margin
+       4.Border = it will add a border.
+       5.Shadow = it will add a shadow.
+
+
+       SELECTORS:
+            Selectors is used to select elements in HTML.
+       1.Universal selectors (*) = selects all the types universally.
+       2.Type (Tag) = Selects all the specific type of  tag.
+       3.id (#) (single) = selects the unique element where id is declared.
+       4.class (.) (multiple) = selects the all elements where class is declared.
+
+DISPLAY :
+    Display property is used to specify HTML elements how to display in user's Interface.
+    Unique line-->Block-->Margin, Dimensions.
+    Same line-->Inline-->Margin will applied only for horizontal axis, no dimensions will applied.
+    Same line-->Inline-Block-->margin, Dimensions.
+
+Combiators :
+it is used to select specify the elements. differentiate between elements (or) A combinator is something that explain the relationship between the selectors.
+   -->space = space combinators is used to apply to all the childs inside the containers. space is provided
+   -->Child = child combinators is uesd to apply only to the selected ids which is represented by us. > is used
+
+transition value: changes applied not immediately. apply to both original box and edited box that is hover.
+outline property: none for input tags.
+
+Psuedo classes:
+1.hover = when the curser is placed upon the elements.
+2.active = when mouse down.
+3.focus = input is the only tag that can be focused only with Background color.
+4.visited = only for anchor tag.
+5.first-child = first child design
+6.last-child = last child design
+7.nth-child = nth child by mentioning the button number
+
+Psuedo elements:
+1.before = apply designs before the text of the given tags.
+2.after = apply designs after the text of the given tags.
+3.first-line = apply text colors and font size etc to the first line of the paragraphs.
+4.first-letter = applys text color, font size and font height to the first letter to the given paragraphs.
+5.selection = while selecting the lines in the web pages color of text and background colors can be changed using selection psuedoelements.
+6.Placeholder = using input::placeholder attributes we can change the font family, font weight and color of texts in the given placeholder in the input tags.
+
+Position properties:-
+1.fix--Static = 
+2.move--Relative = it starts from the original point that the div point,want to move left we have to give rigthtags, vice versa. z-index value should be more, both tags we have to give z-index number, and moved div's position is not taken by next div.
+3.move--Absolute = it moves from body tag starting point, same as relative attributes but starts from the body starting point. next div's moves to moved div's position,
+4.move&fix--Fixed = it is present and next div is comes to fixed div and fixed div is overlap the next div.
+5.move&fix--Sticky = sticks in the page.
+
+TRANSFORM:
+1.Scale = scale value will increase the size of the divisions.
+2.Rotate = rotating with the angles given. for clockwise give positive values, for anti-clockwise rotate give negetive values.
+3.Skew
+4.Translate = move the elements in elemental vise.
+
+
+ANIMATION:

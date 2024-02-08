@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        div{
+            width: 200px;
+            height: 90px;
+            background-color: antiquewhite;
+            position: absolute;
+            top: 48%;
+            border: 1px solid black;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.434);
+        }
+        #click{
+            width: 100px;
+            height: 50px;
+            position: absolute;
+            top: 51%;
+            left: 90%;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.434);
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        #reset{
+            width: 100px;
+            height: 50px;
+            position: absolute;
+            top: 90%;
+            left: 50%;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.434);
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+        img{
+            position: absolute;
+            top: 48.5%;
+            left: 85%;
+        }
+    </style>
+</head>
+<body>
+    <section id="section">
+        <div id="div"></div>
+        <img src="./images/arrow-back-regular-72.png" alt="image" id="img">
+        <button id="click" onclick="clickhere()">Click here</button>
+    </section>
+    <button id="reset" onclick="reset()">reset</button>
+
+    <script>
+        function clickhere()
+        {
+            let img = document.getElementById("img");
+            img.style.transition = "10s"
+            img.style.position = "absolute";
+            img.style.top = "48.5%";
+            img.style.left = "12%";
+
+            let div = document.getElementById("div");
+            div.style.transitionDelay = "10s";
+            div.style.backgroundColor = "purple";
+            div.style.transitionDuration = "1s";
+        }
+
+        function reset()
+        {
+            let img = document.getElementById("img");
+            img.style.position = "absolute";
+            img.style.top = "48.5%";
+            img.style.left = "85%";
+
+            let div = document.getElementById("div");
+            div.style.transitionDelay = "0s";
+            div.style.backgroundColor = "antiquewhite"
+        }
+    </script>
+</body>
+</html>

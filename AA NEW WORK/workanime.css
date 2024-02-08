@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Sedgwick+Ave+Display&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+            
+body{
+    background: url(../../../../Downloads/32.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#box{
+    background-color: rgba(0, 0, 0, 0.473);
+    height: 55vh;
+    width: 25vw;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#box h1{
+    font-family: 'Sedgwick Ave Display', cursive;
+    color: white;
+    margin: 30px;
+}
+
+#box input{
+    width: 300px;
+    height: 40px;
+    margin: 10px;
+    padding-left: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+#box input:focus{
+    outline: none;
+}
+
+#box hr{
+    width: 22vw;
+    margin: 20px;
+}
+
+#box #button1{
+    width: 8vw;
+    height: 5vh;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Sedgwick Ave Display', cursive;
+    border: solid 2px white;
+    background-color: black;
+    transition: 0.2s linear;
+}
+
+#box #button1:hover{
+    letter-spacing: 5px;
+    transition: 0.2s linear;
+}
+
+#box span{
+    color: white;
+    display: block;
+}
+
+#box #button2{
+    width: 11vw;
+    height: 5vh;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Sedgwick Ave Display', cursive;
+    border: solid 2px white;
+    background-color: rgba(255, 0, 0, 0.455);
+    transition: 0.2s linear;
+}
+
+#box #button2:hover{
+    background-color: white;
+    color: rgba(255, 0, 0, 0.455);
+    transition: 0.2s linear;
+    border: solid 2px red;
+}

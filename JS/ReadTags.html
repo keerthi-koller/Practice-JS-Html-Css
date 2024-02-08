@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="header1">HOW TO READ THE TAG</h1>
+    <hr class="cls" />
+
+    <div ="id" ="container">
+      <h1 id="inner-header">Get Methods</h1>
+      <p class="cls">We have some DOM inbuilt methods to get the tags.</p>
+      <button class="cls">click here</button>
+
+      <p>lekfekf</p>
+      <p>lorem</p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor neque
+        vel ex? Quibusdam, quisquam aspernatur ipsum odio iusto tempore
+        accusamus enim ea quaerat voluptatem omnis quam quidem officia
+        reiciendis provident!
+      </p>
+    </div>
+
+    <fieldset>
+      <legend>select gender</legend>
+      <input type="radio" name="gender" id="m" value="Male" />
+      <label for="m">Male</label>
+      <input type="radio" name="gender" id="f" value="Female" />
+      <label for="f">Female</label>
+      <input type="radio" name="gender" id="o" value="Others" />
+      <label for="o">Others</label>
+    </fieldset>
+
+    <input>
+      <legend>select skills</legend>
+      <input type="checkbox" name="skills" id="j" value="Java" />
+      <label for="j">Java</label>
+      <input type="checkbox" name="skills" id="js" value="Java Script" />
+      <label for="js">Java Script</label>
+      <input type="checkbox" name="skills" id="s" value="SQL" />
+      <label for="s">SQL</label>
+      <input type="checkbox" name="skills" id="r" value="JS" />
+      <label for="r">React JS</label>
+    </input>
+
+    <button onclick="getInputTags()">
+      check output
+    </button>
+
+    <script>
+      // function getTags()
+      // {
+      //     console.log( "hello world" );
+      //     console.log( document.getElementById( "header1" ) );
+      //     let header = document.getElementById( "header1");
+      //     console.log(header);
+      //     console.log(typeof (header));
+
+      //     console.log( document.getElementById( "inner-header" ) );
+      //     let inner_header = document.getElementById( "inner-header" );
+      //     console.log(inner_header);
+      //     console.log(typeof (inner_header));
+
+      //     let container = document.getElementById("container");
+      //     console.log(container);
+      // }
+      // getTags();
+
+
+
+    //   function getInputTags()
+    //   {
+    //       let gender = document.getElementsByName("gender");
+    //       console.log(gender);
+    //       for (let i = 0; i < gender.length; i++)
+    //       {
+    //           console.log(gender[i]);
+    //           console.log(typeof(gender[i]));     //object
+    //           console.log(gender[i].value);
+    //           let check = gender[i].checked;
+    //           if (check == true)
+    //           {
+    //               console.log( gender[i].value );
+    //           }
+    //       }
+    //   }
+
+    //   function getInputTags()
+    //   {
+    //       let gender = document.getElementsByName("gender");
+    //       for (let i = 0; i < gender.length; i++)
+    //       {
+    //           if (gender[i].checked)
+    //           {
+    //               alert(gender[i].value);
+    //           }
+    //       }
+    //   }
+
+    //   function getInputTags()
+    //   {
+    //       let skills = document.getElementsByName("skills");
+    //       console.log(skills);
+    //       for (let i = 0; i < skills.length; i++)
+    //       {
+    //           console.log(skills[i]);
+    //           console.log(typeof(skills[i]));     //object
+    //           console.log(skills[i].value);
+    //           let check1 = skills[i].checked;
+    //           if (check1 == true)
+    //           {
+    //               console.log( skills[i].value );
+    //           }
+    //       }
+    //   }
+
+      // function getInputTags1()
+      // {
+      //     let skills = document.getElementsByName("skills");
+      //     for (let i = 0; i < skills.length; i++)
+      //     {
+      //         if (skills[i].checked)
+      //         {
+      //             // alert (skills[i].value);
+      //             console.log(skills[i].value);
+      //         }
+      //     }
+      // }
+
+    //   function getTags() {
+        // let h1 = document.querySelector("#header1");        //header1 is id so use #.   for class use .
+        // console.log(h1);
+        // //or
+        // let h2 = document.getElementById("header1");
+        // console.log(h2);
+
+        // let h3 = document.querySelector(".cls");        //only dispays first element
+        // console.log(h3);
+
+        // let h5 = document.querySelectorAll(".cls");
+        // console.log(h5);
+
+        //or
+        // let h4 = document.getElementsByClassName("cls");
+        // console.log(h4);
+
+        // let h6 = document.querySelector("p");
+        // console.log(h6);
+
+        // let h8 = document.querySelectorAll("p");
+        // console.log(h8);
+        // //or
+        // let h7 = document.getElementsByTagName("p");
+        // console.log(h7);
+
+
+        // console.log("=================================");
+        // let cls = document.getElementsByClassName("cls");
+        // console.log(cls);
+        // console.log(cls[0]);
+        // console.log(cls[2]);
+
+        // let tag = document.getElementsByTagName("h1");
+        // console.log(tag);
+        // console.log(tag[0]);
+        // console.log(tag[1]);
+        // console.log(tag[2]);
+    //   }
+    //   getTags();
+    </script>
+  </body>
+</html>

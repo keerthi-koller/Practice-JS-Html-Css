@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 500px;
+            height: 500px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #secondhand{
+            background: linear-gradient(black 55%, transparent 55%);
+            width: 5px;
+            height: 250px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #minutehand{
+            background: linear-gradient(black 55%, transparent 55%);
+            width: 5px;
+            height: 200px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #hourhand{
+            background: linear-gradient(black 55%, transparent 55%);
+            width: 5px;
+            height: 150px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #alarmhand{
+            background: linear-gradient(red 55%, transparent 55%);
+            width: 2px;
+            height: 300px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #dot{
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        input{
+            font-size: 30px;
+            width: 200px;
+            height: 50px;
+            position: absolute;
+            top: 50%;
+            left: 15%;
+        }
+
+        label{
+            font-size: 20px;
+            font-weight: bold;
+            width: 200px;
+            height: 50px;
+            position: absolute;
+            top: 45%;
+            left: 15%;
+        }
+
+        button{
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 20px;
+            border: none;
+            width: 150px;
+            height: 50px;
+            position: absolute;
+            top: 60%;
+            left: 15%;
+        }
+    </style>
+</head>
+<body>
+    <img src="./images/clock.png">
+    <audio id="audio2" autoplay></audio>
+    
+    <div id="secondhand"></div>
+    <div id="minutehand"></div>
+    <div id="hourhand"></div>
+    <div id="alarmhand"></div>
+    <div id="dot"></div>
+    <label>Enter alarm</label> <input type="time" id="time">
+    <button onclick="setalarm()">set alarm</button>
+
+    <script>
+
+        function setalarm()
+        {
+            alert("alarm saved");
+        }
+        
+        function set()
+        {            
+            let current = new Date();
+            let seconds = current.getSeconds();
+            let minutes = current.getMinutes();
+            let hours = current.getHours();
+
+            let secondhand = document.getElementById("secondhand");
+            secondhand.style.transform = `translate(-50%, -50%) rotate( ${seconds*6}deg )`;
+
+            let minutehand = document.getElementById("minutehand");
+            minutehand.style.transform = `translate(-50%, -50%) rotate( ${minutes*6}deg )`;
+
+            let hourhand = document.getElementById("hourhand");
+            hourhand.style.transform = `translate(-50%, -50%) rotate( ${(hours*30) + (minutes*0.5)}deg )`;
+
+            let alarmhand = document.getElementById("alarmhand"); 
+            let time = document.getElementById("time");
+            let hour = Number(time.value.substring(0, 2));
+            let minute = Number(time.value.substring(3, 5));
+            alarmhand.style.transform = `translate(-50%, -50%) rotate( ${(hour*30) + (minute*0.5)}deg )`;
+
+            let audio2 = document.getElementById("audio2");
+            if ( alarmhand.style.transform == hourhand.style.transform )
+            {
+                audio2.setAttribute("src", "./images/alarmmusic.mp3")
+            }
+
+        }
+
+        setInterval( () => { set() }, 1000 );
+
+    </script>
+
+</body>
+</html>

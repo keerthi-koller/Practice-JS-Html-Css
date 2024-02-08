@@ -1,0 +1,38 @@
+HTML SYLLABUS
+
+Introduction
+Implementation
+Structure (Shift+1)--> Html Skeleton
+Tags
+Basic Tags
+Attributes
+Basic Attributes
+Character formatting Tags
+Scrolling data
+Links in Html
+Media Contents in HTML (Images, Audios, Videos, YouTube videos, Nested web page)
+List Creation
+Table Creation
+Form Creation
+Special characters, Emojis, Icons
+Symmentic tags
+
+
+CSS SYLLABUS
+
+Introduction and Implementation
+Font and Text properties
+Backgrounds
+Selectors and Combinators
+Box modeling
+Psuedo classes
+Psuedo elements
+Display properties
+Position properties
+Transform properties
+Transition properties
+Animation properties
+
+
+JAVA SCRIPT SYLLABUS
+

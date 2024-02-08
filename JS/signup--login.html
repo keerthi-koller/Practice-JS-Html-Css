@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+        *{
+            font-family: 'Roboto', sans-serif;
+        }
+        body{
+            background: url(https://img.freepik.com/free-vector/vibrant-summer-ombre-background-vector_53876-105765.jpg?w=360);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        h1{
+            text-align: center;
+        }
+        .form-box{
+            background-color: white;
+            width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px black;
+        }
+        .form-box input{
+            font-size: 17px;
+            font-weight: 400;
+            display: block;
+            width: 80%;
+            height: 30px;
+            padding-left: 10px;
+            margin: 10px auto;
+            transition: 0.2s;
+        }
+        .form-box input:focus{
+            transform: scale(1.05);
+            outline: none;
+        }
+        button{
+            background-color: black;
+            color: white;
+            font-size: 22px;
+            display: block;
+            margin: 20px auto;
+            padding: 10px 30px;
+            border: 1px solid black;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+        button:hover{
+            background-color: white;
+            color: black;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Login Page</h1>
+    <hr>
+
+    <div class="form-box">
+
+        <input type="text" placeholder="Enter name" id="username">
+        <input type="password" placeholder="Enter password" id="pwd">
+        <button onclick="login()">Login</button>
+
+    </div>
+
+    <script>
+
+        function login()
+        {
+            let currentUsername = document.getElementById("username").value;
+            let currentPassword = document.getElementById("pwd").value;
+            
+
+            let allUsers = JSON.parse(localStorage.getItem("userdetails"));
+            let currentUser = allUsers.find( (val) => {
+                                                    return val.name == currentUsername;
+                                                } );
+            // let currentUser ;
+            // for (let i = 0; i < allUsers.length; i++) 
+            // {
+            //     if (allUsers[i].name == currentUsername)
+            //     {
+            //         currentUser = allUsers[i];
+            //     }                
+            // }
+
+            if (currentUser == undefined)
+            {
+                alert("User not found");
+            }
+            else if (currentPassword != currentUser.password)
+            {
+                alert("Invalid password!!! please try again later");
+            }
+            else
+            {
+                alert("Login successfull");
+            }
+        }
+
+    </script>
+
+</body>
+</html>

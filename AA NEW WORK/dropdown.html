@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        section{
+            background-color: rgba(143, 35, 35, 0.286);
+            width: 400px;
+            height: 300px;
+            padding: 20px;
+            margin: 20px auto;
+        }
+        section a{
+            color: black;
+            text-decoration-line: none;
+        }
+        section a:hover~#dropdownbox{
+            display: block;
+        }
+        #dropdownbox{
+            background-color: white;
+            width: 100px;
+            height: 200px;
+            display: none;
+            overflow: hidden;
+            animation: drop 0.5s;
+        }
+        #dropdownbox:hover{
+            display: block;
+        }
+        @keyframes drop {
+            0%{
+                height: 0px;
+            }
+            100%{
+                height: 200px;
+            }
+        }
+        #dropdownbox span{
+            display: block;
+            margin: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <a href="">Fashion</a>
+        <div id="dropdownbox">
+            <span>Tshirts</span>
+            <span>Shirts</span>
+            <span>Trousers</span>
+            <span>Shoes</span>
+            <span>Watches</span>
+            <span>Cap</span>
+            <span>Accessories</span>
+        </div>
+    </section>
+</body>
+</html>

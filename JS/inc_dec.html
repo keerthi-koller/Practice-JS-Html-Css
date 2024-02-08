@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- sir -->
+    <!-- <style>
+        body{
+            margin: 50px 700px;
+        }
+    </style> -->
+    <style>
+        body{
+            margin: 200px 700px;
+        }
+        #val{
+            display: block;
+            width: 100px;
+            height: 50px;
+            margin: 0px 40px;
+            border-radius: 10px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+        }
+        div button{
+            width: 70px;
+            height: 50px;
+            margin: 20px 10px;
+            border-radius: 10px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <button id="val">0</button>
+    <div>
+        <button onclick="inc()">+</button>
+        <button onclick="dec()">-</button>
+    </div>
+
+    <!-- sir -->
+    <!-- <h1 id="head"></h1>
+    <button onclick="inc(), color()">+</button>
+    <button onclick="dec(), color()">-</button>
+    <script>
+        function inc()
+        {
+            let head = document.getElementById("head");
+            // head.innerText = Number(head.innerText) + 1;
+            head.innerText++;
+        }
+        function dec()
+        {
+            let head = document.getElementById("head");
+            // head.innerText = Number(head.innerText) - 1;
+            head.innerText--;
+        }
+        function color()
+        {
+            let head = document.getElementById("head");
+            let n = Number(head.innerText);
+            if ( n <= 0 )
+            {
+                head.style.backgroundColor = "red";
+            }
+            else if (n > 10)
+            {
+                head.style.backgroundColor = "yellow";
+            }
+            else
+            {
+                head.style.backgroundColor = "transparent";
+            }
+        }
+    </script> -->
+
+
+    <script>
+        function inc()
+        {
+            document.getElementById("val").innerText = Number(document.getElementById("val").innerText) + 1;
+        }
+        function dec()
+        {
+            document.getElementById("val").innerText = Number(document.getElementById("val").innerText) - 1;
+        }
+    </script>
+</body>
+</html>

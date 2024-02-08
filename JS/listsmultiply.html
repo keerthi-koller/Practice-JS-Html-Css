@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 250px 600px;
+            display: flex;
+        }
+        input{
+            width: 200px;
+            height: 50px;
+            border-radius: 10px;
+            background-color: antiquewhite;
+            margin: auto 20px;
+            font-size: 20px;
+        }
+        button{
+            border-radius: 10px;
+            background-color: gainsboro;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <input type="number" placeholder="Enter value" id="val">
+    <button onclick="createList()">create</button>
+    <ol id="ol">
+    </ol>
+    <!-- sir -->
+    <!-- <input type="text" id="num">
+    <button onclick="createMultiple()">create</button>
+    <div id="container">
+
+    </div>
+    <script>
+        function createMultiple()
+        {
+            let div = document.getElementById("container");
+            let count = document.getElementById("num").value;
+            for (let i = 0; i < count; i++) 
+            {
+                let ip = document.createElement("input");
+                let br = document.createElement("br");
+                // div.append(ip, br);     
+                div.appendChild(ip);  
+                div.appendChild(br);
+            }
+        }
+    </script> -->
+
+
+
+    <script>
+        function createList()
+        {
+            let ol = document.getElementById("ol");
+            let val = Number(document.getElementById("val").value);
+            for (let i = 0; i < val; i++) 
+            {
+                let li = document.createElement("li");
+                li.innerText = `KEERTHI`;
+                ol.append(li);
+            }
+        }
+    </script>
+</body>
+</html

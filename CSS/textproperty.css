@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Pacifico&display=swap');
+
+h1{
+    color: crimson; 
+   font-size: 500%; 
+    /* font-weight: normal; */
+    font-style: italic;
+    text-align: center;
+    /* font-family: 'Times New Roman', Times, serif; */
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    /* font-family: 'Josefin Sans', sans-serif; */
+    /* background-color: crimson; */
+    /* text-decoration-line:underline ; */
+    /* text-decoration-line:overline ; */
+    /* text-decoration-line:line-through ; */
+    /* text-decoration-color:black; */
+    /* text-decoration-style: double; */
+    /* text-decoration-style: dashed; */
+    /* text-decoration-thickness: 20px; */
+    /* text-decoration-thickness: 2px; */
+    /* text-decoration: line-through black wavy 3px; */
+    /* text-shadow: 5px 5px 5px purple;
+    text-shadow: 25px 5px 5px purple;
+    text-shadow: -25px 5px 5px purple;
+    text-shadow: 5px 25px 5px purple;
+    text-shadow: 5px -25px 5px purple;
+    text-shadow: 5px 5px 15px purple;
+    text-shadow: 5px 5px 0px purple; */
+    letter-spacing: 5px;
+    word-spacing: 20px;
+
+}
+
+a{
+    text-decoration-line:none ;
+}
+
+p{
+    /* color: darkorange; */
+    font-size: 30px;
+    /* font-weight: bold; */
+    /* font-style: italic; */
+    /* font-family: 'Times New Roman', Times, serif; */
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    /* font-family: 'Josefin Sans', sans-serif; */
+font-family: 'Pacifico', cursive;
+background-color: crimson;
+text-indent: 200px;
+/* text-decoration-line:underline ; */
+text-decoration: underline black double 3px;
+letter-spacing: 5px;
+word-spacing: 20px;
+
+}
+
+
+span{
+    font-size: 40px;
+    text-align: center;
+    background-color: crimson;
+}

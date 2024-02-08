@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        input[type="text"]{
+            width: 300px;
+            height: 90px;
+            font-size: 20px;
+            padding-left: 20px;
+            border-radius: 20px;
+        }
+        button{
+            width: 200px;
+            height: 50px;
+            border-radius: 20px;
+            font-size: 20px;
+            display: block;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body id="body">
+    <input type="text" placeholder="enter password" id="input"> <br>
+    <input type="checkbox" id="u" name="password"> <label for="u">Uppercase present</label> <br>
+    <input type="checkbox" id="l" name="password"> <label for="l">Lowercase present</label> <br>
+    <input type="checkbox" id="d" name="password"> <label for="d">Digits present</label> <br>
+    <input type="checkbox" id="s" name="password"> <label for="s">Specialcharacter present</label> <br>
+    <input type="checkbox" id="le" name="password"> <label for="le">Length b/w 8-16</label> <br>
+    <button onclick="pwdverification()">set pwd</button>
+</body>
+
+<script>
+    let upper = 0;
+    function pwdverification()
+    {
+        let input = document.getElementById("input");
+
+        for (let i = 0; i < input.value.length; i++) 
+        {
+            if (input.value.charCodeAt(i) >= 65 && input.value.charCodeAt(i) <= 90)
+            {
+                upper++;
+            }
+        }
+
+        let u = document.getElementById("u");
+        if (upper > 0)
+        {
+            u.value.checked;
+        }
+    }
+</script>
+</html>

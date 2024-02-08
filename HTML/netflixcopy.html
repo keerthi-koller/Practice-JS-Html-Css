@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./index.css">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+        }
+        body{
+            background: linear-gradient(rgba(0, 8, 29, 0.7) 10%,  rgba(0, 8, 29,1) 20% ,  rgba(0, 8, 29,1) 100%) 
+            ,  url(http://surl.li/gniyu);
+            background-size: 100% ;
+        }
+        .s1{
+            height: 900px;
+            color: white;
+        }
+
+        nav{
+            width: 1253px;
+            height: 86px;
+            margin: auto;
+            padding: 0px 48px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        #logo svg{
+            width: 148px;
+            height: 40px;
+            fill: rgb(229, 9, 20);
+        }
+        nav>div{
+            display: flex;
+        }
+        #dropdown{
+            background-color: rgba(0, 0, 0, 0.597);
+            width: 126px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            border: solid 1px grey;
+            border-radius: 4px;
+        }
+        #dropdown i{
+            font-size: 20px;
+        }
+        #dropdown select{
+            font-size: 14px;
+            width: 70px;
+            border: none;
+            background-color: transparent;
+            color: white;
+        }
+        nav>div button{
+            color: white;
+            font-weight: bold;
+            font-size: 14px;
+            background-color: rgb(229, 9, 20);
+            width: 77px;
+            height: 32px;
+            border: none;
+            border-radius: 4px;
+            margin-left: 16px;
+        }
+        section>div{
+            width: 1253px;
+            margin: auto;
+        }
+        #header-text{
+            width: 885px;
+            height: 210px;
+            margin-top: 94px;
+            padding:0px 100px;
+        }
+        #header-text h1{
+            font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+            font-size: 4rem;
+            font-weight: 900;
+        }
+        #header-text p{
+            font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-top: 16px;
+        }
+        #signin-box{
+            background: linear-gradient(90deg ,#e50915 , 
+            #00197a , #233371);
+            width: 1053px;
+            height: 158px;
+            margin: 80px 0px 0px 100px;
+            padding: 4px;
+            border-radius: 8px;
+        }
+        #signin-box>div{
+            background-color: rgb(0,8,29);
+            width: 100%;
+            height: 100%;
+            padding: 24px 42px;
+            border-radius: 8px;
+        }
+        #signin-box>div h3{
+            font-size: 23px;
+            font-weight: 400;
+            margin-bottom: 16px;
+        }
+        #signin-box>div>div{
+            display: flex;
+        }
+        #signin-box>div input{
+            width: 383px;
+            height: 56px;
+            background-color: rgb(39, 39, 39);
+            border: 1.5px rgb(215, 215, 215) solid;
+            border-radius: 4px;
+        }
+        #signin-box>div input::placeholder{
+            font-size: 18px;
+            font-weight: 600;
+            padding-left: 10px;
+        }
+        #signin-box>div button{
+            color: white;
+            font-size: 22px;
+            font-weight: 700;
+            background-color: #e50915;
+            width: 196px;
+            height: 56px;
+            margin-left: 8px;
+            border: none;
+            border-radius: 4px;
+        }
+        .s2{
+            background-color: #090626;
+            width: 90%;
+            height: auto;
+            margin: auto;
+            border-radius: 8px;
+            color: white;
+        }
+        .box{
+            padding: 12px 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box h1{
+            font-size: 3rem;
+            font-weight: 900;
+        }
+        .box p{
+            font-size: 1.25rem;
+            font-weight: 400;
+        }
+        .box img{
+            width: 526px;
+            height: 394px;
+        }
+        .line{
+            background-color: #494949;
+            width: 1053px;
+            height: 1px;
+        }   
+        .s3{
+            height: auto;
+            color: white;
+            margin-top: 170px;
+        }
+        .s3>h1{
+            font-size: 2.5rem;
+            font-weight: 700;
+            width: 1053px;
+            margin: 10px auto;
+        }
+        .question-list{
+            width: 1053px;
+            height: 558px;
+            margin: auto;
+        }
+        .question-list div{
+            background-color: rgb(19,33,68);
+            width: 100%;
+            height: 85px;
+            margin-bottom:8px;
+            padding: 0px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: 0.3s;
+        }
+        .question-list div:hover{
+            background-color: rgb(64, 77, 112);
+            transition: 0.3s;
+        }
+
+        .question-list h1{
+            font-size: 1.5rem;
+            font-weight: 400;
+        }
+        .question-list button{
+            font-size: 50px;
+            background-color: transparent;
+            border: none;
+            color: white;
+        
+        }
+        .signin-box2{
+            width: 1053px;
+            margin: 16px auto 0px auto;
+        }
+        .signin-box2 h3{
+            font-size: 1.25rem;
+            font-weight: 400;
+            margin-bottom: 16px;
+        }
+        .signin-box2>div{
+            display: flex;
+        }
+        .signin-box2 input{
+            width: 376px;
+            height: 56px;
+            background-color: rgb(39, 39, 39);
+            border: 1.5px rgb(215, 215, 215) solid;
+            border-radius: 4px;
+        }
+        .signin-box2 input::placeholder{
+            font-size: 18px;
+            font-weight: 600;
+            padding-left: 10px;
+        }
+        .signin-box2 button{
+            color: white;
+            font-size: 22px;
+            font-weight: 700;
+            background-color: #e50915;
+            width: 201px;
+            height: 56px;
+            margin-left: 8px;
+            border: none;
+            border-radius: 4px;
+        }
+        footer{
+            width: 1053px;
+            height: auto;
+            margin: 170px auto 0px auto;
+            padding-bottom: 100px;
+        }
+        footer span{
+            font-size: 1rem;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        .footer-links{
+            width: 100%;
+            margin-top: 36px;
+            display: grid;
+            grid-template-columns: 263px 263px 263px 263px;
+            row-gap: 10px;
+        }
+        .footer-links a{
+            font-size: 1rem;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.7);
+            display: inline-block;
+        }
+        footer #dropdown{
+            background-color: #090626;
+            margin: 36px 0px;
+        }
+        footer #dropdown i{
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="s1">
+        <nav>
+            <div id="logo">
+                <svg viewBox="0 0 111 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="default-ltr-cache-mv4tc2"><g><path d="M105.06233,14.2806261 L110.999156,30 C109.249227,29.7497422 107.500234,29.4366857 105.718437,29.1554972 L102.374168,20.4686475 L98.9371075,28.4375293 C97.2499766,28.1563408 95.5928391,28.061674 93.9057081,27.8432843 L99.9372012,14.0931671 L94.4680851,-5.68434189e-14 L99.5313525,-5.68434189e-14 L102.593495,7.87421502 L105.874965,-5.68434189e-14 L110.999156,-5.68434189e-14 L105.06233,14.2806261 Z M90.4686475,-5.68434189e-14 L85.8749649,-5.68434189e-14 L85.8749649,27.2499766 C87.3746368,27.3437061 88.9371075,27.4055675 90.4686475,27.5930265 L90.4686475,-5.68434189e-14 Z M81.9055207,26.93692 C77.7186241,26.6557316 73.5307901,26.4064111 69.250164,26.3117443 L69.250164,-5.68434189e-14 L73.9366389,-5.68434189e-14 L73.9366389,21.8745899 C76.6248008,21.9373887 79.3120255,22.1557784 81.9055207,22.2804387 L81.9055207,26.93692 Z M64.2496954,10.6561065 L64.2496954,15.3435186 L57.8442216,15.3435186 L57.8442216,25.9996251 L53.2186709,25.9996251 L53.2186709,-5.68434189e-14 L66.3436123,-5.68434189e-14 L66.3436123,4.68741213 L57.8442216,4.68741213 L57.8442216,10.6561065 L64.2496954,10.6561065 Z M45.3435186,4.68741213 L45.3435186,26.2498828 C43.7810479,26.2498828 42.1876465,26.2498828 40.6561065,26.3117443 L40.6561065,4.68741213 L35.8121661,4.68741213 L35.8121661,-5.68434189e-14 L50.2183897,-5.68434189e-14 L50.2183897,4.68741213 L45.3435186,4.68741213 Z M30.749836,15.5928391 C28.687787,15.5928391 26.2498828,15.5928391 24.4999531,15.6875059 L24.4999531,22.6562939 C27.2499766,22.4678976 30,22.2495079 32.7809542,22.1557784 L32.7809542,26.6557316 L19.812541,27.6876933 L19.812541,-5.68434189e-14 L32.7809542,-5.68434189e-14 L32.7809542,4.68741213 L24.4999531,4.68741213 L24.4999531,10.9991564 C26.3126816,10.9991564 29.0936358,10.9054269 30.749836,10.9054269 L30.749836,15.5928391 Z M4.78114163,12.9684132 L4.78114163,29.3429562 C3.09401069,29.5313525 1.59340144,29.7497422 0,30 L0,-5.68434189e-14 L4.4690224,-5.68434189e-14 L10.562377,17.0315868 L10.562377,-5.68434189e-14 L15.2497891,-5.68434189e-14 L15.2497891,28.061674 C13.5935889,28.3437998 11.906458,28.4375293 10.1246602,28.6868498 L4.78114163,12.9684132 Z"></path></g></svg>
+            </div>
+
+            <div>
+                <div id="dropdown">
+                    <i class='bx bx-globe'></i>
+                    <select>
+                        <option>English</option>
+                        <option>हिन्दी</option>
+                    </select>
+                </div>
+                <button>Sign In</button>
+            </div>
+        </nav>
+
+        <div>
+            <div id="header-text">
+                <h1>Unlimited movies, TV shows and more.</h1>
+                <p>Watch anywhere. Cancel anytime.</p>
+            </div>
+    
+            <div id="signin-box">
+                <div>
+                    <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
+                    <div>
+                        <input type="text" placeholder="Email address">
+                        <button>Get Started > </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="s2">
+
+        <div class="box">
+            <div>
+                <h1>Enjoy on your TV.</h1>
+                <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.
+                </p>
+            </div>
+            <div>
+                <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/cards/v2.1/enjoyOnTv/en.png" alt="">
+            </div>
+        </div>
+
+        <div class="line"></div>
+
+        <div  class="box">
+            <div>
+                <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/cards/v2.1/watchEverywhere/en.png" alt="">
+            </div>
+            <div>
+                <h1>Watch everywhere.</h1>
+                <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+            </div>
+        </div>
+
+        <div class="line"></div>
+
+        <div  class="box">
+            <div>
+                <h1>Create profiles for children.</h1>
+                <p>Send children on adventures with their favourite characters in a space made just for them—free with your membership.</p>
+            </div>
+            <div>
+                <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/cards/v2.1/kids/en-GB.png" alt="">
+            </div>
+        </div>
+
+        <div class="line"></div>
+
+        <div  class="box">
+            <div>
+                <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/cards/v2.1/download/en.png" alt="">
+            </div>
+            <div>
+                <h1>Download your shows to watch offline.</h1>
+                <p>Save your favourites easily and always have something to watch.</p>
+            </div>
+        </div>
+       
+    </section>
+
+    <section class="s3">
+        <h1>Frequently Asked Questions</h1>
+
+        <div class="question-list">
+            <div>
+                <h1>What is Netflix ?</h1>
+                <button> + </button>
+            </div>
+            <div>
+                <h1>What is Netflix ?</h1>
+                <button> + </button>
+            </div>
+            <div>
+                <h1>What is Netflix ?</h1>
+                <button> + </button>
+            </div>
+            <div>
+                <h1>What is Netflix ?</h1>
+                <button> + </button>
+            </div>
+            <div>
+                <h1>What is Netflix ?</h1>
+                <button> + </button>
+            </div>
+            <div>
+                <h1>What is Netflix ?</h1>
+                <button> + </button>
+            </div>  
+        </div>
+
+        <div class="signin-box2">
+            <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
+            <div>
+                <input type="text" placeholder="Email address">
+                <button>Get Started ></button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <span>Questions? Call 000-800-919-1694</span>
+        <div class="footer-links">
+            <a href="">Help Centre</a>
+            <a href="">Help Centre</a>
+            <a href="">Help Centre</a>
+            <a href="">Help Centre</a>
+            <a href="">Help Centre</a>
+            <a href="">Help Centre</a>
+            <a href="">Help Centre</a>
+            <a href="">Help Centre</a>
+            <a href="">Help Centre</a>
+            <a href="">Help Centre</a>
+            <a href="">Help Centre</a>
+            <a href="">Help Centre</a>
+            <a href="">Help Centre</a>
+            <a href="">Help Centre</a>
+            <a href="">Help Centre</a>
+            <a href="">Help Centre</a>
+        </div>
+        <div id="dropdown">
+            <i class='bx bx-globe'></i>
+            <select>
+                <option>English</option>
+                <option>हिन्दी</option>
+            </select>
+        </div>
+        <span>Netflix India</span>
+    </footer>
+
+</body>
+</html>

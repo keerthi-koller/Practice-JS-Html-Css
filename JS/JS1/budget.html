@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(227, 217, 217, 0.16);
+        }
+        #left{
+            width: 500px;
+            height: auto;
+        }
+        #lefttop{
+            border: 2px solid black;
+            margin: 30px auto;
+            padding: 10px;
+        }
+        #leftbottom{
+            border: 2px solid black;
+            margin: 30px auto;
+            padding: 10px;
+        }
+        input{
+            width: 80%;
+            height: 30px;
+            display: block;
+            margin: 10px 0px;
+            border: 1px solid grey;
+            padding-left: 10px;
+        }
+        button{
+            width: 125px;
+            height: 30px;
+            font-size: 14px;
+            background: transparent;
+        }
+        #right{
+            width: 600px;
+            height: auto;
+        }
+        #righttop{
+            display: flex;
+            justify-content: space-around;
+        }
+        img{
+            width: 90px;
+            height: 50px;
+            margin: 20px 0px;
+        }
+        h1{
+            font-size: 30px;
+        }
+        h3{
+            font-weight: bold;
+        }
+        #rightbottom{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 80px;
+        }
+        #rightbottom h3{
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <section id="left">
+        <h1>BUDGET APP</h1>
+        <div id="lefttop">
+            <label><b>Please Enter Your Budget</b></label>
+            <input type="text" id="budget">
+            <button onclick="calculate()">Calculate</button>
+        </div>
+        <div id="leftbottom">
+            <label><b>Please Enter Your Expense</b></label>
+            <input type="text" id="expenser">
+            <label><b>Please Enter Expense Amount</b></label>
+            <input type="text" id="expensea">
+            <button onclick="addExpense()">Add Expense</button>
+        </div>
+    </section>
+
+    <section id="right">
+        <div id="righttop">
+            <div>
+                <h3>BUDGET</h3>
+                <img src="./images/currency1.jpg" alt="img">
+                <h1 id="budgeth1"></h1>
+            </div>
+
+            <div>
+                <h3>EXPENSES</h3>
+                <img src="./images/currency2.jpg" alt="img">
+                <h1 id="expenseh1"></h1>
+            </div>
+
+            <div>
+                <h3>BALANCE</h3>
+                <img src="./images/currency3.jpg" alt="img">
+                <h1 id="balanceh1"></h1>
+            </div>
+        </div>
+
+        <div id="rightbottom">
+            <div id="div1">
+                <h3 id="div1h3">Expense Title</h3>
+            </div>
+
+            <div id="div2">
+                <h3 id="div2h3">Expense Value</h3>
+            </div>
+
+            <div id="div3">
+                <h3 style="visibility: hidden; margin-bottom: 20px;">ABCDEFGHIJK</h3>
+            </div>
+        </div>
+    </section>
+
+    <script>
+
+        function calculate()
+        {
+            let budget = Number(document.getElementById("budget").value);
+            let budgeth1 = document.getElementById("budgeth1");
+            let balance = document.getElementById("balanceh1");
+
+            budgeth1.style.color = "green";
+
+            let budgeth11 = JSON.stringify(budgeth1.innerText);
+            let budgett = Number(budgeth11.slice(3, budgeth11.length-1));
+            budgeth1.innerText = `$ ${ budget+budgett }`;
+
+            let expenseh1 = document.getElementById("expenseh1");
+            let expenseh11 = JSON.stringify(expenseh1.innerText);
+            let expense = Number(expenseh11.slice(3, expenseh11.length-1));
+
+            let balance1 = JSON.stringify(balance.innerText);
+            let balancee = Number(balance1.slice(3, balance1.length-1));
+            balance.innerText = `$ ${ (budget+budgett) - expense }`;
+
+            balance.style.color = "green";
+
+        }
+
+        function addExpense()
+        {
+            let expenser = document.getElementById("expenser").value;
+            let expensea = Number(document.getElementById("expensea").value);
+            let balance = document.getElementById("balanceh1");
+
+            let expenseh1 = document.getElementById("expenseh1");
+
+            expenseh1.style.color = "red";
+
+            let expenseh11 = JSON.stringify(expenseh1.innerText);
+            let expensee = Number(expenseh11.slice(3, expenseh11.length-1));
+            expenseh1.innerText = `$ ${ expensea+expensee }`;
+
+            let budgeth1 = document.getElementById("budgeth1");
+            let budgeth11 = JSON.stringify(budgeth1.innerText);
+            let budget = Number(budgeth11.slice(3, budgeth11.length-1));
+
+            let balance1 = JSON.stringify(balance.innerText);
+            let balancee = Number(balance1.slice(3, balance1.length-1));
+            balance.innerText = `$ ${ (budget) - (expensea+expensee) }`;
+
+            balance.style.color = "green";
+
+            if ( Number(balance.innerText.slice(2, balance.innerText.length)) <= 0 )
+            {
+                alert("low balance");
+            }
+
+
+            let div1 = document.getElementById("div1");
+            let div1p = document.createElement("p");
+            div1p.style.fontSize = "23px";
+            div1p.innerText = expenser;
+
+            div1p.style.color = "red";
+            div1.appendChild(div1p);
+
+            let div2 = document.getElementById("div2");
+            let div2p = document.createElement("p");
+            div2p.style.fontSize = "23px";
+            div2p.innerText = expensea;
+
+            div2p.style.color = "red";
+            div2.appendChild(div2p);
+
+
+            let div3 = document.getElementById("div3");
+            let i1 = document.createElement("i");
+            div3.appendChild(i1);
+            i1.setAttribute("class", "bx bxs-edit");
+            i1.setAttribute("onclick", "editt()");
+            i1.style.fontSize = "22px"
+            i1.style.marginBottom = "5px"
+
+            let i2 = document.createElement("i");
+            div3.appendChild(i2);
+            i2.setAttribute("class", "bx bxs-trash-alt");
+            i2.setAttribute("onclick", "deletee()");
+            i2.style.fontSize = "22px"
+            i2.style.marginBottom = "5px"
+
+            let br = document.createElement("br");
+            div3.appendChild(br);
+
+        }
+
+        function editt()
+        {
+            let div1h3 = document.getElementById("div1h3");
+            let expenser = document.getElementById("expenser");
+            expenser.value = div1h3.nextElementSibling.innerText;
+            div1h3.removeChild(div1h3.nextElementSibling);
+
+            let div2h3 = document.getElementById("div2h3");
+            let expensea = document.getElementById("expensea");
+            expensea.value = div2h3.nextElementSibling.value;
+            div2h3.removeChild(div2h3.nextElementSibling);
+        }
+
+        function deletee()
+        {
+            console.log("bye");
+        }
+
+    </script>
+
+</body>
+</html>
+
+<!-- <i class='bx bxs-edit' ></i> -->
+<!-- <i class='bx bxs-trash-alt'></i> -->

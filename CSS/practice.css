@@ -1,0 +1,70 @@
+button{
+    margin: 50px 500px;
+    width: 200px;
+    height: 60px;
+    border-radius: 50px;
+    background-color: greenyellow;
+    font-size: 30px;
+    font-weight: bold;
+    color: green;
+    box-sizing: border-box;
+    box-shadow: 20px 20px 20px rgba(0, 128, 0, 0.621);
+    transition: 2s;
+}
+button:hover{
+    transform: translate(50%, 50%);
+    transition: 2s;
+    background-color: rgb(13, 220, 13);
+}
+h1{
+    margin: 50px 500px;
+    width: 200px;
+    height: 60px;
+    background-color: greenyellow;
+    font-size: 30px;
+    border-radius: 50px;
+    text-align: center;
+    font-weight: bold;
+    border-style: solid;
+    color: green;
+    transition: 2s;
+    box-shadow: 20px 20px 20px rgba(0, 128, 0, 0.621);
+}
+h1:hover{
+    transform: translate(50%, 50%);
+    transition: 2s;
+    background-color: rgb(13, 220, 13);
+}
+section{
+    display: flex;
+    width: 800px;
+    height: 450px;
+    background-color: black;
+    margin: auto auto;
+}
+div{
+    width: 60px;
+    height: 400px;
+    margin-top: 25px;
+}
+#div1{
+    background-color: rgb(182, 45, 45);
+    box-shadow: 10px 10px 50px black;
+    margin-left: 250px;
+}
+#div2{
+    background-color: rgb(216, 41, 41);
+    position: relative;
+    left: 59.99px;
+    transform: skewX(31deg);
+    height: 400px;
+    z-index: 65;
+    box-shadow: 10px 10px 50px black;
+}
+#div3{
+    position: relative;
+    left: 120px;
+    background-color: rgb(182, 45, 45);
+    z-index: 60;
+    box-shadow: 10px 10px 50px black;
+}

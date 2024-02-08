@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="Captcha code" id="ip">
+    <button onclick="captcha()">generate captcha</button>
+    <button onclick="otp()">generate otp</button>
+
+    <script>
+        function r()
+        {
+            return Math.trunc(Math.random()*10);
+        }
+        function otp()
+        {
+            document.getElementById("ip").value = Math.trunc(Math.random()*10000000);
+        }
+        function captcha()
+        {
+            let str1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            let str2 = "abcdefghijklmnopqrstuvwxyz";
+            str = `${str1[r()]}${r()}${str1[r()]}${str2[r()]}${r()}${r()}${str2[r()]}`;
+            document.getElementById("ip").value = str;
+        }
+
+        // function captcha()
+        // {
+        //     let str1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        //     let str2 = "abcdefghijklmnopqrstuvwxyz";
+        //     let str = "";
+
+        //         str = `${str1[Math.trunc(Math.random()*10)]}${Math.trunc(Math.random()*10)}${str1[Math.trunc(Math.random()*10)]}${str2[Math.trunc(Math.random()*10)]}${Math.trunc(Math.random()*10)}${Math.trunc(Math.random()*10)}${str2[Math.trunc(Math.random()*10)]}`;
+
+        //     document.getElementById("ip").value = str;   
+        // }
+    </script>
+</body>
+</html>

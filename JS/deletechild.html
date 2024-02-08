@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>FOOD LIST</h1>
+    <hr>
+    <ol id="foodlist">
+        <li>Ice-cream</li>
+        <li>Cake</li>
+        <li>xxx</li>
+        <li>yyy</li>
+    </ol>
+    <input type="text" placeholder="enter food" id="food">
+    <button onclick="remove()">remove child</button>
+
+    <script>
+        function remove()
+        {
+            let ol = document.getElementById("foodlist");
+            // ol.remove(ol.lastElementChild);
+            ol.removeChild(ol.lastElementChild);
+        }
+    </script>
+</body>
+</html>

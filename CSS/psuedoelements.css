@@ -1,0 +1,28 @@
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+h1::before{
+    content: '***';
+    background-color: aliceblue;
+}
+h1::after{
+    content: '***';
+    background-color: aliceblue;
+}
+p::first-line{
+    color: blueviolet;
+}
+p::first-letter{
+    font-weight: bold;
+    font-size: 30px;
+}
+p::selection{
+    background-color: rgb(0, 0, 0);
+    color: rgb(244, 7, 7);
+}
+input::placeholder{
+    color: coral;
+    font-family: cursive;
+    font-weight: bold;
+}

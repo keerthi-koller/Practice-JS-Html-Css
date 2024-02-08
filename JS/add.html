@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            width: 480px;
+            margin: 150px auto;
+            background: linear-gradient(white, pink, white);
+            border: 2px solid pink;
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px pink;
+        }
+        #div1{
+            display: flex;
+        }
+        label{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .div{
+            padding: 15px;
+            box-sizing: border-box;
+        }
+        input{
+            width: 200px;
+            height: 40px;
+            display: block;
+            font-size: 25px;
+            font-weight: bold;
+            margin: 10px auto;
+            text-align: right;
+        }
+        button{
+            width: 200px;
+            height: 40px;
+            display: block;
+            margin: 30px auto;
+            border-radius: 20px;
+            border: 2px solid rgba(0, 0, 0, 0.267);
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .lst{
+            margin: 0px 200px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div id="div1">
+            <div class="div">
+                <label>Num1</label> <input type="text" id="num1">
+            </div>
+            <div class="div">
+                <label>Num2</label> <input type="text" id="num2">
+            </div>
+        </div>
+        <button onclick="add()">Add</button>
+        <label class="lst">Result</label> <input type="text" id="res">
+    </section>
+    <script>
+        function add()
+        {
+            let res = Number(document.getElementById("num1").value) + Number(document.getElementById("num2").value);
+            document.getElementById("res").value = res;
+        }
+    </script>
+</body>
+</html>

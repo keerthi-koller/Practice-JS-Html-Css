@@ -1,0 +1,26 @@
+/* *{
+    background-color: aliceblue;
+    padding: 0px;
+}
+
+#idid{
+    background-color: aqua;
+    border: solid 2px black;
+
+}
+
+.cls{
+    background-color: beige;
+    border: solid 5px yellow;
+}
+#division{
+    color: aquamarine;
+    margin : 100px;
+} */
+
+h1{
+    color: red;
+    text-decoration-line: underline;
+    text-decoration-color : rgb(33, 32, 32);
+    text-shadow: 5px 5px 2px;
+}

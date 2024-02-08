@@ -1,0 +1,44 @@
+/* body{ 
+    background-color: white(0, 255, 255, 0.505);
+}
+
+ul{
+    background-color: white;
+}
+
+p{
+    background-color: white;
+}
+
+span{
+    background-color: white;
+}
+
+div{
+    background-color: white;
+}
+
+body{
+    background: linear-gradient(120deg, orange, white, green);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background: linear-gradient(orange 0%, orange 40%, green 60%, green 100%);
+    background-size: (1920px, 900px);
+    background: radial-gradient(red, aquamarine, blue);
+}*/
+ /* body{ */
+    /* background: url(../HTML/bird-wings-flying-feature.gif); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+   /* text-align: center; */
+    /* background-position: center; */
+
+ /* } */
+
+ /* body{
+    background: linear-gradient(rgba(34, 1, 1, 0.412), rgba(30, 1, 30, 0.566)), url(../HTML/IMG_20210219_231630_295.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    text-align: center;
+    color: white;
+ } */

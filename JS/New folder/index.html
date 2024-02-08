@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>title</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <h1>Student Data</h1>
+
+    <div class="parent"></div>
+
+    <script>
+      const display = (jsonResponse) => {
+        let data = jsonResponse.data;
+        let students = data.map((student) => {
+          return `<div class="card">
+            <div class="id">${student.studentId}</div>
+            <div class="name">${student.studentName}</div>
+            <div class="grade">${student.studentGrade}</div>
+        </div>`;
+        });
+        let html = students.join("");
+        document.querySelector(".parent").innerHTML = html;
+      };
+
+      fetch("http://localhost:8080/students1").then((response) => {
+        console.log(response);
+        response
+          .json()
+
+          .then((jsonResponse) => display(jsonResponse));
+      });
+    </script>
+  </body>
+</html>

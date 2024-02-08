@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        *{
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #88A9F0;
+        }
+        section{
+            display: flex;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        #leftdiv{
+            width: 400px;
+            background-color: #1A42BC;
+            position: relative;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+        #leftdiv img{
+            width: 200px;
+            position: absolute;
+            top: 50%;
+            left: 45%;
+            transform: translate(-50%, -50%);
+        }
+        #rightdiv{
+            width: 400px;
+            background-color: white;            
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        #rightdiv div{
+            width: 80%;
+            margin: 30px auto;
+            text-align: center;
+            position: relative;
+        }
+        h1{
+            font-size: 38px;
+            color: #1A42BC;
+            margin-top: 30px;
+            display: block;
+        }
+        p{
+            font-size: 15px;
+            margin: 25px;
+        }
+        input{
+            display: block;
+            width: 80%;
+            height: 40px;
+            margin: 10px auto;
+            border: 1px solid rgba(0, 0, 0, 0.169);
+            background-color: transparent;
+            padding-left: 30px;
+            border-radius: 10px;
+        }
+        input+i{
+            position: absolute;
+            left: 40px;
+        }
+        #name{
+            top: 120px;
+        }
+        #email{
+            top: 170px;
+        }
+        #phone{
+            top: 220px;
+        }
+        #pass{
+            top: 270px;
+        }
+        input:focus+i{
+            display: none;
+        }
+        #signup{
+            width: 80%;
+            height: 40px;
+            display: block;
+            margin: 15px auto;
+            background-color: #1A42BC;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        #span1{
+            display: block;
+            margin-top: 30px;
+        }
+        #lastdiv{
+            position: absolute;
+            display: flex;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        #lastdiv button{
+            width: 100px;
+            height: 35px;
+            background-color: transparent;
+            border: 1px solid rgba(0, 0, 0, 0.162);
+            border-radius: 10px;
+            color: #1A42BC;
+            font-weight: bold;
+        }
+        #lastdiv button+i{
+            position: absolute;
+            top: 10px;
+            color: #1A42BC;
+            font-weight: bold;
+        }
+        #g{
+            left: 8px;
+        }
+        #f{
+            left: 100px;
+        }
+        a{
+            text-decoration-line: none;
+            margin-left: 5px;
+            font-weight: bold;
+        }
+        #span2{
+            display: block;
+            margin-top: -20px;
+            color: grey;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div id="leftdiv">
+            <img src="./images/undraw_completed_03xt.svg" alt="image">
+        </div>
+        <div id="rightdiv">
+            <div>
+                <h1>Student Signup</h1>
+                <p>fill the form for student sign-up</p>
+                <input type="text" placeholder="Enter your name">       <i class='bx bx-user' id="name"></i>  
+                <input type="text" placeholder="Enter your email">      <i class='bx bx-lock' id="email"></i>  
+                <input type="text" placeholder="Enter your phone">      <i class='bx bx-user' id="phone"></i>  
+                <input type="text" placeholder="Create password">       <i class='bx bx-lock' id="pass"></i>  
+                <button id="signup">Sign up</button>
+                <span id="span1">Or sign in with</span>
+                <div id="lastdiv">
+                    <button id="google">Google</button>                 <i class='bx bxl-google'  id="g"></i>
+                    <button id="facebook">Facebook</button>             <i class='bx bxl-facebook'  id="f"></i>
+                </div>
+                <span id="span2">Already have an account<a href="">Sign in</a> </span>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

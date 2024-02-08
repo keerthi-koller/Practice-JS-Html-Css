@@ -1,0 +1,622 @@
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --- -- --
+
+BROCHURE
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --- -- -
+
+18, Brigade Seshmahal,
+Vasavi Temple St, V V puram,
+Basavanagudi, Bengaluru,
+Karnataka 560004
+
+ABOUT JSPIDERS
+THE WORLD’S LARGEST JAVA
+TRAINING ORGANIZATION
+
+JSpiders is the world’s ace software
+course training organization with an aim
+to bridge the gap between the demands
+of the industry and the curriculum of
+educational institutions.
+With centers across the Globe, the
+institute is a platform where young
+minds are given the opportunity to build
+successful careers.
+” JSpiders is a place where businesses find
+talent and dreams take flight."
+
+About Jspiders Basavanagudi
+Courses & Syllabus
+Placement Activities
+New Batches
+Placement Statistics
+Testimonials
+
+ABOUT
+JSPIDERS BASAVANAGUDI
+➢ Jspiders originated in Basavanagudi
+➢ Lakhs of students got job from Jspiders Basavanagudi.
+➢ Courses are designed separately for freshers & experienced candidates.
+➢ Very close to City Bus Stand, KSRTC Bus Stand & Railway Station.
+
+TRAINERS
+▪ Trainer team is led by senior most trainer having 20+ years in teaching.
+▪ Trainer team is blended with experienced trainers, senior trainers and
+junior trainers.
+▪ Dedicated mentoring team to nurture skills in students.
+▪ Consultant from industry helps students to increment project &
+understand the concept in real time.
+▪ Dedicated trainer team for weekend batches.
+▪ Refreshing class / back up class facility.
+
+INFRASTRUCTURE
+▪ One of the biggest training centers in India.
+▪ The premises consists of 7 big classrooms.
+▪ Three classrooms with internet facility.
+▪ 5 small classrooms.
+▪ One open auditorium class.
+▪ One big study center.
+▪ More than 700 bike parking facility.
+
+2
+
+COURSES & SYLLABUS
+DURATION: 4 - 5 MONTHS
+JAVA FULL STACK
+➢ Core Java
+
+• Basics of Java & Programming.
+• Object oriented programming
+system (oops)
+• Java Library
+➢ SQL
+➢ Web Technology
+• HTML & CSS (Online, offline
+(or) material)
+• Basics of Java Script
+➢ Frameworks
+• Springs framework
+• Hibernate
+
+MERN STACK
+➢ Java till oops concept
+➢ SQL
+➢ Web Technology
+
+• HTML & CSS
+• JavaScript
+➢ MongoDB
+➢ Express JS
+➢ React JS
+➢ Node JS
+
+ADVANCE COURSE
+
+DEVOPS
+➢ Core Java
+
+• Basics of Java & Programming.
+• Object oriented programming
+system (oops)
+• Java Library
+➢ SQL
+➢ Web Technology
+• HTML & CSS
+• Basics of Java Script
+➢ Linux O S
+➢ Virtual machines
+➢ Git (Version control system)
+➢ Maven (Build automation tool)
+➢ Junit (Testing frameworks)
+➢ AWS (Cloud computing)
+➢ Ansible (Automation, configuration &
+management tool)
+
+➢ Dockers, Kubernetes & Jenkins –
+
+CICD pipeline (Deployment Automations)
+➢ Bash script, Groovy script, XML
+
+JAVA FULL STACK WITH LIVE PROJECT
+
+FRONTEND
+
+HTML
+Java
+CSS
+SQL & PLSQL
+SASS
+Advance Java
+JavaScript
+Hibernate
+ECMAScript
+Spring MVC
+Bootstrap
+Spring Boot
+React JS
+Spring IOC
+React Material UI
+Web Services
+2 Full Stack Corporate Projects
+
+DEVELOPMENT TOOLS
+➢
+➢
+➢
+➢
+➢
+➢
+➢
+➢
+➢
+➢
+
+Git
+GitHub
+Bitbucket
+Jenkins
+Maven Tool
+Postman
+Junit
+VScode
+API
+Eclipse
+
+AWS CLOUD COMPUTING
+3
+
+➢ Version controls
+➢ Linux commands
+➢ Jenkins, Dockers, Kubernetes s/w tools
+
+BACKEND
+
+PLACEMENT RELATED
+ACTIVITIES
+
+4
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+NOVEMBER MONTH
+NEW BATCHES
+WEEKDAY
+DATE
+03-11-2022
+07-11-2022
+10-11-2022
+14-11-2022
+17-11-2022
+21-11-2022
+24-11-2022
+28-11-2022
+
+TIME
+11:30 AM
+11:30 AM
+11:30 AM
+11:30 AM
+11:30 AM
+11:30 AM
+11:30 AM
+11:30 AM
+
+WEEKEND
+DATE
+TIME
+05-11-2022
+2:30 PM
+12-11-2022
+2:30 PM
+19-11-2022
+2:30 PM
+26-11-2022
+2:30 PM
+EVENING
+
+DATE
+02-11-2022
+09-11-2022
+16-11-2022
+23-11-2022
+30-11-2022
+
+TIME
+6:30 PM
+6:30 PM
+6:30 PM
+6:30 PM
+6:30 PM
+
+*Same for all courses
+5
+
+OCTOBER MONTH
+PLACEMENT STATISTICS
+Civil/Mechanical Stream Students
+NAME
+
+COMPANY CODE
+
+PACKAGE
+
+Pramod
+
+DEA1022JSP01
+
+6.5 LPA
+
+Srinath
+
+DEA1022JSP01
+
+6.3 LPA
+
+Susheel Tatuskar
+
+SCR1022JSP01
+
+6 LPA
+
+Katari Pavan
+
+MBA1022JSP01
+
+5.5 LPA
+
+Dheeraj Rathod
+
+TOR1022JSP01
+
+5 LPA
+
+Madan Gowda
+
+WIL1022JSP01
+
+5 LPA
+
+Manu T D
+
+LOG1022JSP01
+
+4.2 LPA
+
+Nikhilsagar T C
+
+AMA1022JSP01
+
+4.15 LPA
+
+Harish s
+
+TOR1022JSP01
+
+4 LPA
+
+Ravi Teja
+
+IDE1022JSP01
+
+4 LPA
+
+And more…
+
+ECE/EEE/EIE Stream Students
+NAME
+
+6
+
+COMPANY CODE
+
+PACKAGE
+
+Megha N Y
+
+BRI1022JSP01
+
+6.79 LPA
+
+Pooja H S
+
+ACC1022JSP01
+
+4.2 LPA
+
+Manoj S
+
+RED1022JSP01
+
+4 LPA
+
+Padmavathi R B
+
+BUF1022JSP01
+
+3.5 LPA
+
+Vijaykumar G N
+
+MEG1022JSP01
+
+3.5 LPA
+
+Pratibha
+
+NIN1022JSP01
+
+3.5 LPA
+
+Pratika Sharma
+
+PLA1022JSP01
+
+3.5 LPA
+
+Akshay V
+
+SMA1022JSP01
+
+3.5 LPA
+
+Ganesh G
+
+SOL1022JSP01
+
+3.5 LPA
+
+Yashoda R
+
+HEA1022JSP01
+
+3 LPA
+
+And more…
+
+CSE/ISE/IT Stream Students
+NAME
+
+COMPANY CODE
+
+PACKAGE
+
+S Madhu Sudhan
+
+CAP1022JSP01
+
+5 LPA
+
+H S Darshini
+
+TEK1022JSP01
+
+5 LPA
+
+Chaya. V
+
+AEY1022JSP01
+
+4.8 LPA
+
+Darshan S N
+
+THO1022JSP01
+
+4.8 LPA
+
+Rakesh C
+
+HCL1022JSP01
+
+4.25 LPA
+
+Bhavana MA
+Shashi Kumar A
+S
+Golla vivek
+Himadrish
+Aralere
+Deepika B S
+
+NIN1022JSP01
+
+4 LPA
+
+SCR1022JSP01
+
+4 LPA
+
+COV1022JSP01
+
+3.6 LPA
+
+QNA1022JSP01
+
+3.5 LPA
+
+SLK1022JSP01
+
+3.5 LPA
+
+And more…
+
+BCA/BSc/MCA/MSc/Other Stream
+Students
+NAME
+
+COMPANY CODE
+
+Siddu Naykar
+
+NIN1022JSP01
+
+5 LPA
+
+Niranjan K
+
+WIP1022JSP01
+
+4 LPA
+
+Meghana Reddy
+
+HAS1022JSP01
+
+3.65 LPA
+
+Shubha S R
+
+REA1022JSP01
+
+3.6 LPA
+
+Adarsha S S
+
+IMS1022JSP01
+
+3.5 LPA
+
+Aruna Kumar M
+
+IOL1022JSP01
+
+3.5 LPA
+
+Unnathi. R. Bhat
+
+AVA1022JSP01
+
+3 LPA
+
+Sameer
+
+HYN1022JSP01
+
+3 LPA
+
+Chandra Sekhar
+
+PAR1022JSP01
+
+2.5 LPA
+
+Vinod Kumar T
+
+PAR1022JSP01
+
+2.5 LPA
+
+And more…
+7
+
+PACKAGE
+
+FEW TESTIMONIALS
+
+KATARI PAVAN
+(Java Full Stack)
+
+B. Tech – Civil
+
+“All technical skills were taught very smoothly and
+
+(Java Full Stack)
+
+BCA - CS
+“JSpiders Basavanagudi is a great place to gain
+
+everything was easy when I started training at
+JSpiders Basavanagudi.
+I have got placed as a technical support engineer
+with 5.5 LPA package.”
+
+practical knowledge which we lack even after
+getting immense theory knowledge from colleges.
+I got placed with 3 LPA package.”
+
+MEGHA N Y
+
+VARUN KUMAR M N
+
+(Java Full Stack)
+
+BE - ECE
+
+“Fabulous faculties they clear all the doubts at any
+point of time. They make sure students are perfect
+with concepts and make lots of revision activities.
+Mocks and test made us learn more and keep the
+concepts strong. Finally, I got placed with 6.79
+LPA package.”
+
+(Advance Course)
+
+BE - Mechanical
+“I am 2019 pass out. Syed sir and Navaneeth sir
+helped a lot. They gave in-depth knowledge on
+java, SQL and JavaScript. Navaneeth sir motivated
+me a lot and gave lot of support. It helped a lot to
+clear interview. Thanks to all JSpiders faculty for
+providing such amazing knowledge. I got placed
+with 3 LPA.”
+
+Himadrish Aralere
+
+SUSHEEL S TATUSKAR
+
+(MERN)
+
+(DevOps)
+
+BE – ISE
+“Syed sir helped me in gaining knowledge in
+JavaScript. This helped me to get my dream
+job as a frontend developer. JSpiders HRs
+helped me get companies. I got placed with
+3.5 LPA package in a good MNC.”
+8
+
+UNNATHI R BHAT
+
+BE – Civil
+“Good platform to gain the knowledge about
+Java, SQL, Web, and DEVOPS. Shariq sir
+taught me with core concepts of DEVOPS.
+Thank you Uday sir for teaching JAVA
+concepts and programming. I got placed with
+4 LPA package.”
+
+FOR MORE INFORMATION
+CONTACT US ON
+1.
+2.
+3.
+4.
+
+9686114422
+9686995511
+9740499385
+9686949964
+
+FOLLOW US ON
+jspiders_basavanagudi
+Jspiders Basavanagudi
+JSPIDERS - Java Learning Platform
+JSpidersBasavanagudi
+
+9
+
+

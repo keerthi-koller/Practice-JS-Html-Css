@@ -1,0 +1,54 @@
+h1{
+    background-color: gray;
+    display: inline;
+    margin: 10px;
+    width: 200px;
+    height: 500px;
+}
+
+p{
+    background-color: green;
+    display: inline;
+    margin: 10px;
+    width: 200px;
+    height: 500px;
+}
+
+div{
+    background-color: blue;
+    display: inline;
+    margin: 10px;
+    width: 200px;
+    height: 500px;
+}
+
+span{
+    background-color: brown;
+    display: inline;
+    margin: 10px;
+    width: 200px;
+    height: 50px;
+}
+
+label{
+    background-color: plum;
+    display: inline;
+    margin: 10px;
+    width: 200px;
+    height: 50px;
+}
+input{
+    background-color: darkblue;
+    display: inline;
+    margin: 10px;
+    width: 200px;
+    height: 50px;
+}
+
+button{
+    background-color: chartreuse;
+    display: inline;
+    margin: 10px;
+    width: 200px;
+    height: 50px;
+}

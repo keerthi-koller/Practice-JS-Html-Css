@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            background-color: bisque;
+            display: flex;
+            width: 900px;
+            height: 90vh;
+            padding: 20px;
+            margin: auto;
+        }
+        section>div{
+            border: solid 1px black;
+            width: 50%;
+            height: 100%;
+            text-align: center;
+        }
+        section>div:last-child{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div>
+            <label>Background</label> <input type="color" id="background"><br><br>
+            <label>Height</label> <input type="number" id="height"><br><br>
+            <label>Width</label> <input type="number" id="width"><br><br>
+            <label>Border</label> <input type="number" id="borderthickness">
+                                  <input type="color" id="bordercolor">
+                                  <select id="borderstyle">
+                                    <option selected disabled>select style</option>
+                                    <option>solid</option>
+                                    <option>double</option>
+                                    <option>dotted</option>
+                                    <option>dashed</option>
+                                    <option>grooved</option>
+                                    <option>ridge</option>
+                                  </select><br><br>
+            <label>border-radius</label> <input type="number" id="borderradius"><br><br>
+            <button onclick="box()">Create box</button>
+        </div>
+        <div>
+            <div id="box"></div>
+        </div>
+    </section>
+
+    <script>
+        function box()
+        {
+            let background = document.getElementById("background").value;
+            let height = document.getElementById("height").value;
+            let width = document.getElementById("width").value;
+            let bordert = document.getElementById("borderthickness").value;
+            let borderc = document.getElementById("bordercolor").value;
+            let borders = document.getElementById("borderstyle").value;
+            let borderr = document.getElementById("borderradius").value;
+            let div = document.getElementById("box");
+            // div.style.backgroundColor = background;
+            // div.style.height = `${Number(height)}px`;
+            // div.style.width = `${Number(width)}px`;
+            // div.style.borderWidth = `${Number(bordert)}px`;
+            // div.style.borderColor = borderc;
+            // div.style.borderStyle = borders;
+            // div.style.borderRadius = `${Number(borderr)}px`;
+
+            div.style.backgroundColor = background;
+            div.style.height = height+"px";
+            div.style.width = width+"px";
+            // div.style.borderWidth = bordert+"px";
+            // div.style.borderColor = borderc;
+            // div.style.borderStyle = borders;
+            div.style.border = `${bordert}px ${borderc} ${borders}`;
+            div.style.borderRadius = borderr+"px";
+        }
+    </script>
+
+</body>
+</html>

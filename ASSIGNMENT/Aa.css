@@ -1,0 +1,844 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+H1{
+    font-size: 55px;
+    text-align: center;
+    color: purple;
+    letter-spacing: 3px;
+    word-spacing: 20PX;
+}
+
+H2{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 0px;
+    color: purple;
+    letter-spacing: 15px;
+    word-spacing: 30PX;
+}
+
+hr{
+    margin-top: 20px;
+    width: 100%;
+    height: 6px;
+    background-color: aliceblue;
+    border: none;
+}
+
+section div{
+    background: white;
+    background-size: cover;
+    width: 800px;
+    height: 500px;
+    display: block;
+    margin: 30px auto;
+    position: relative;
+    animation-name: ani;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+#img1{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: 2s;
+    z-index: 40;
+}
+
+#img1:hover{
+    scale: 2.5;
+    z-index: 41;
+    transform: rotateY(180deg);
+    transition: 2s;
+    border: 2px solid white;
+}
+
+#img2{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    left: 100px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: 2s;
+    z-index: 40;
+}
+
+#img2:hover{
+    scale: 2.5;
+    z-index: 41;
+    transform: rotateY(180deg);
+    transition: 2s;
+    border: 2px solid white;
+}
+
+#img3{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    left: 200px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: 2s;
+    z-index: 40;
+}
+
+#img3:hover{
+    scale: 2.5;
+    z-index: 41;
+    transform: rotateY(180deg);
+    transition: 2s;
+    border: 2px solid white;
+}
+
+
+#img4{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    left: 300px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: 2s;
+    z-index: 40;
+}
+
+#img4:hover{
+    scale: 2.5;
+    z-index: 41;
+    transform: rotateY(180deg);
+    transition: 2s;
+    border: 2px solid white;
+}
+
+
+#img5{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    left: 400px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: 2s;
+    z-index: 40;
+}
+
+#img5:hover{
+    scale: 2.5;
+    z-index: 41;
+    transform: rotateY(180deg);
+    transition: 2s;
+    border: 2px solid white;
+}
+
+#img6{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    left: 500px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: 2s;
+    z-index: 40;
+}
+
+#img6:hover{
+    scale: 2.5;
+    z-index: 41;
+    transform: rotateY(180deg);
+    transition: 2s;
+    border: 2px solid white;
+}
+
+#img7{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    left: 600px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: 2s;
+    z-index: 40;
+}
+
+#img7:hover{
+    scale: 2.5;
+    z-index: 41;
+    transform: rotateY(180deg);
+    transition: 2s;
+    border: 2px solid white;
+}
+
+#img8{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    left: 700px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: 2s;
+    z-index: 40;
+}
+
+#img8:hover{
+    scale: 2.5;
+    z-index: 41;
+    transform: rotateY(180deg);
+    transition: 2s;
+    border: 2px solid white;
+}
+
+#img9{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: 2s;
+    z-index: 40;
+}
+
+#img9:hover{
+    scale: 2.5;
+    z-index: 41;
+    transform: rotateY(180deg);
+    transition: 2s;
+    border: 2px solid white;
+}
+
+#img10{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: 2s;
+    z-index: 40;
+}
+
+#img10:hover{
+    scale: 2.5;
+    z-index: 41;
+    transform: rotateY(180deg);
+    transition: 2s;
+    border: 2px solid white;
+}
+
+#img11{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: 2s;
+    z-index: 40;
+}
+
+#img11:hover{
+    scale: 2.5;
+    z-index: 41;
+    transform: rotateY(180deg);
+    transition: 2s;
+    border: 2px solid white;
+}
+
+#img12{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 100px;
+    left: 300px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: 2s;
+    z-index: 40;
+}
+
+#img12:hover{
+    scale: 2.5;
+    z-index: 41;
+    transform: rotateY(180deg);
+    transition: 2s;
+    border: 2px solid white;
+}
+
+#img13{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 100px;
+    left: 400px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: 2s;
+    z-index: 40;
+}
+
+#img13:hover{
+    scale: 2.5;
+    z-index: 41;
+    transform: rotateY(180deg);
+    transition: 2s;
+    border: 2px solid white;
+}
+
+#img14{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 100px;
+    left: 500px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: 2s;
+    z-index: 40;
+}
+
+#img14:hover{
+    scale: 2.5;
+    z-index: 41;
+    transform: rotateY(180deg);
+    transition: 2s;
+    border: 2px solid white;
+}
+
+#img15{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 100px;
+    left: 600px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: 2s;
+    z-index: 40;
+}
+
+#img15:hover{
+    scale: 2.5;
+    z-index: 41;
+    transform: rotateY(180deg);
+    transition: 2s;
+    border: 2px solid white;
+}
+
+#img16{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 100px;
+    left: 700px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: 2s;
+    z-index: 40;
+}
+
+#img16:hover{
+    scale: 2.5;
+    z-index: 41;
+    transform: rotateY(180deg);
+    transition: 2s;
+    border: 2px solid white;
+}
+
+#img17{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 200px;
+    left: 0px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: 2s;
+    z-index: 40;
+}
+
+#img17:hover{
+    scale: 2.5;
+    z-index: 41;
+    transform: rotateY(180deg);
+    transition: 2s;
+    border: 2px solid white;
+}
+
+#img18{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: 2s;
+    z-index: 40;
+}
+
+#img18:hover{
+    scale: 2.5;
+    z-index: 41;
+    transform: rotateY(180deg);
+    transition: 2s;
+    border: 2px solid white;
+}
+
+#img19{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: 2s;
+    z-index: 40;
+}
+
+#img19:hover{
+    scale: 2.5;
+    z-index: 41;
+    transform: rotateY(180deg);
+    transition: 2s;
+    border: 2px solid white;
+}
+
+#img20{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 200px;
+    left: 300px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: 2s;
+    z-index: 40;
+}
+
+#img20:hover{
+    scale: 2.5;
+    z-index: 41;
+    transform: rotateY(180deg);
+    transition: 2s;
+    border: 2px solid white;
+}
+
+#img21{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 200px;
+    left: 400px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: 2s;
+    z-index: 40;
+}
+
+#img21:hover{
+    scale: 2.5;
+    z-index: 41;
+    transform: rotateY(180deg);
+    transition: 2s;
+    border: 2px solid white;
+}
+
+#img22{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 200px;
+    left: 500px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: 2s;
+    z-index: 40;
+}
+
+#img22:hover{
+    scale: 2.5;
+    z-index: 41;
+    transform: rotateY(180deg);
+    transition: 2s;
+    border: 2px solid white;
+}
+
+#img23{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 200px;
+    left: 600px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: 2s;
+    z-index: 40;
+}
+
+#img23:hover{
+    scale: 2.5;
+    z-index: 41;
+    transform: rotateY(180deg);
+    transition: 2s;
+    border: 2px solid white;
+}
+
+#img24{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 200px;
+    left: 700px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: 2s;
+    z-index: 40;
+}
+
+#img24:hover{
+    scale: 2.5;
+    z-index: 41;
+    transform: rotateY(180deg);
+    transition: 2s;
+    border: 2px solid white;
+}
+
+#img25{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 300px;
+    left: 0px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: 2s;
+    z-index: 40;
+}
+
+#img25:hover{
+    scale: 2.5;
+    z-index: 41;
+    transform: rotateY(180deg);
+    transition: 2s;
+    border: 2px solid white;
+}
+
+#img26{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 300px;
+    left: 100px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: 2s;
+    z-index: 40;
+}
+
+#img26:hover{
+    scale: 2.5;
+    z-index: 41;
+    transform: rotateY(180deg);
+    transition: 2s;
+    border: 2px solid white;
+}
+
+#img27{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 300px;
+    left: 200px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: 2s;
+    z-index: 40;
+}
+
+#img27:hover{
+    scale: 2.5;
+    z-index: 41;
+    transform: rotateY(180deg);
+    transition: 2s;
+    border: 2px solid white;
+}
+
+#img28{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 300px;
+    left: 300px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: 2s;
+    z-index: 40;
+}
+
+#img28:hover{
+    scale: 2.5;
+    z-index: 41;
+    transform: rotateY(180deg);
+    transition: 2s;
+    border: 2px solid white;
+}
+
+#img29{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 300px;
+    left: 400px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: 2s;
+    z-index: 40;
+}
+
+#img29:hover{
+    scale: 2.5;
+    z-index: 41;
+    transform: rotateY(180deg);
+    transition: 2s;
+    border: 2px solid white;
+}
+
+#img30{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 300px;
+    left: 500px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: 2s;
+    z-index: 40;
+}
+
+#img30:hover{
+    scale: 2.5;
+    z-index: 41;
+    transform: rotateY(180deg);
+    transition: 2s;
+    border: 2px solid white;
+}
+
+#img31{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 300px;
+    left: 600px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: 2s;
+    z-index: 40;
+}
+
+#img31:hover{
+    scale: 2.5;
+    z-index: 41;
+    transform: rotateY(180deg);
+    transition: 2s;
+    border: 2px solid white;
+}
+
+#img32{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 300px;
+    left: 700px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: 2s;
+    z-index: 40;
+}
+
+#img32:hover{
+    scale: 2.5;
+    z-index: 41;
+    transform: rotateY(180deg);
+    transition: 2s;
+    border: 2px solid white;
+}
+
+#img33{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 400px;
+    left: 0px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: 2s;
+    z-index: 40;
+}
+
+#img33:hover{
+    scale: 2.5;
+    z-index: 41;
+    transform: rotateY(180deg);
+    transition: 2s;
+    border: 2px solid white;
+}
+
+#img34{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 400px;
+    left: 100px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: 2s;
+    z-index: 40;
+}
+
+#img34:hover{
+    scale: 2.5;
+    z-index: 41;
+    transform: rotateY(180deg);
+    transition: 2s;
+    border: 2px solid white;
+}
+
+#img35{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 400px;
+    left: 200px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: 2s;
+    z-index: 40;
+}
+
+#img35:hover{
+    scale: 2.5;
+    z-index: 41;
+    transform: rotateY(180deg);
+    transition: 2s;
+    border: 2px solid white;
+}
+
+#img36{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 400px;
+    left: 300px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: 2s;
+    z-index: 40;
+}
+#img36:hover{
+    scale: 2.5;
+    z-index: 41;
+    transform: rotateY(180deg);
+    transition: 2s;
+    border: 2px solid white;
+}
+
+#img37{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 400px;
+    left: 400px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: 2s;
+    z-index: 40;
+}
+
+#img37:hover{
+    scale: 2.5;
+    z-index: 41;
+    transform: rotateY(180deg);
+    transition: 2s;
+    border: 2px solid white;
+}
+
+#img38{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 400px;
+    left: 500px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: 2s;
+    z-index: 40;
+}
+
+#img38:hover{
+    scale: 2.5;
+    z-index: 41;
+    transform: rotateY(180deg);
+    transition: 2s;
+    border: 2px solid white;
+}
+
+#img39{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 400px;
+    left: 600px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: 2s;
+    z-index: 40;
+}
+
+#img39:hover{
+    scale: 2.5;
+    z-index: 41;
+    transform: rotateY(180deg);
+    transition: 2s;
+    border: 2px solid white;
+}
+
+#img40{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 400px;
+    left: 700px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: 2s;
+    z-index: 40;
+}
+#img40:hover{
+    scale: 2.5;
+    z-index: 41;
+    transform: rotateY(180deg);
+    transition: 2s;
+    border: 2px solid white;
+}
+

@@ -1,0 +1,113 @@
+INHERITANCE
+ENCAPSULATION
+setTimeOut
+setTimeInterval
+
+DOM    (DOCUMENT OBJECT MODEL)
+by default font size of h1, h2 tag.
+default margin property???
+
+
+DOM (DOCUMENT OBJECT MODEL)
+
+     s1) Get the tags
+          getElementById()         :-  to get a single element (tag) by using id name.
+          getElementsByClass()     :-  to get a multiple elements (tags) by using class name.
+          getElementsByTagName()   :-  to get a multiple elements (tags) of same type by using tag name.
+          getElementsByName()      :-  to get a input elements (tags) of same set by using name attribute value.
+          querySelector()          :-  to get element by using id or class or tag name.
+          querySelectorAll()       :-  to get elements by using class or tag name. (not id)
+
+     s2) Traverse the tags (travesring the parent, child, sibling tags)
+          traverse a parent:-
+               parentNode          :- to access the parent node of an element.
+               parentElement       :-  to access the parent elemental node of an element.
+
+          traverse a child:-
+               childNodes               :-  access all the type of child nodes.
+               children                 :-  access only the elemental type of nodes.
+               firstChild               :-  access the first child node.
+               firstElementChild        :-  access the first elemental node.
+               lastChild                :-  access the last child node.
+               lastElementChild         :-  access the last elemental node.
+               hasChildNodes()          :-  says whether child node is presentor not.
+               childElementCount        :-  how many child tag is present in a parent.
+
+          traverse a sibling:-
+               nextSibling              :-  to access the next node of an element.
+               nextElementSibling       :-  to access the next elemental node of an element.
+               previousSibling          :-  to access the previous node of an element.
+               previousElementSibling   :-  to access the previous elemental node of an element.
+
+     s3) Manipulation of structure / tags
+          innerText                     :-  to access the text node of an element.
+          textContent                   :-  to access the text node of an element.
+          innerHtml                     :-  
+          value                         :-  to access the user value from an input element.
+          createElement()               :-  to create elemental node ( tag ).
+          append()                      :-  to insert any type node at last position of a parent.
+          appendChild()                 :-  to insert only elemental type of node at last position of a parent.
+          prepend()                     :-  to insert any type node at first position of a parent.
+          insertBefore()                :-
+          replaceChild()                :-
+          removeChild()                 :-
+
+     s4) CRUD/Manipulation of attributes
+          getAttribute()
+          setAttribute()
+          hasAttribute()
+          removeAttribute()
+     
+     s5) CRUD/Manipulation of styles
+          getComputedStyle()
+          style -- property
+
+     s6) event handling
+          event handling
+          event listeners
+
+DOM NOTES
+
+java Script object notation--JSON
+JSON have to keep it in String form.         is nothing but lengthier string.
+
+JSON-JS string to object-->parse()
+JS-JSON object to string-->stringify()
+
+Browser local storage & session storage
+get, set, clear, removeitem methods.
+
+session storage--immediately deletes the values of key and values
+local storage--unless programmer deletes the values it will not deletes.
+
+
+1.take a previous value 
+2.convert JSON to JS
+3.push {} to previous value[]
+4.convert JS to JSON
+5.set back the updated array.
+
+
+
+
+//////////////////////////////////////////////
+Hoisting
+execution context --global & local
+scope chain
+lexial environment
+clousers
+
+HOW JAVASCRIPT DOCUMENT IS EXECUTED ?
+     1) Execution context :  Execution context is a place where all our js code is saved and execued.
+          It has 2 phases.
+               1.1) memory phase :  memory allocations.
+               1.2) execution phase :  execution of the block.
+     
+     2) Hoisting : Hoisting is a process of creating a memory blocks for our program even before the execution.
+          a) variable hoisting :  variable is hoisted by storing undefined as a initial value.
+          b) function hoisting :  function is hoisted by storing entire function code inside it.
+     
+     3) Global Execution Context : The Execution context which is created for our entire js code.
+     4) Local Execution Context  : The Execution context which is created whenever the functions are invoked.
+
+     

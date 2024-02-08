@@ -1,0 +1,146 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    width: 750px;
+    height: 582px;
+    display: flex;
+    justify-content: space-between;
+
+}
+#mobile-images{
+    width: 381px;
+    height: 582px;
+    background-image: url(../../../../Downloads/backgroundinsta.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+#animation{
+    width: 205px;
+    height: 430px;
+    top: 28px;
+    left: 130px;
+    border-radius: 25px;
+    background-color: transparent;
+    position: absolute;
+    animation-name: insta;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+@keyframes insta {
+    0%{
+        background: url(../../../../Downloads/photoinsta.jpeg);
+    }
+    25%{
+        background: url(../../../../Downloads/insta1.jpeg);
+    }
+    50%{
+        background: url(../../../../Downloads/insta2.jpeg);
+    }
+    75%{
+        background: url(../../../../Downloads/insta3.jpeg);
+    }
+}
+#form-content{
+    width: 350px;
+    height: 400px;
+    background-color: white;
+    text-align: center;
+    border: solid 1px rgba(0, 0, 0, 0.126);
+}
+#form-box img{
+    width: 175px;
+    height: 55px;
+    margin: 30px auto;
+}
+#form-box input{
+    width: 269px;
+    height: 38px;
+    margin: 5px;
+    border-radius: 3px;
+    background-color: rgba(128, 128, 128, 0.042);
+    border-color: rgba(128, 128, 128, 0.042);
+    padding-left: 10px;
+}
+#form-box button{
+    width: 269px;
+    height: 38px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: blue;
+    color: rgb(233, 233, 248);
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+#or{
+    width: 269px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+hr{
+    width: 100px;
+    border: none;
+    border-top: solid 1px rgb(200, 200, 200);
+}
+#or span{
+    color: rgb(200, 200, 200);
+}
+#fb-login{
+    display: block;
+    text-decoration-line: none;
+    color: rgb(10, 10, 145);
+    margin: 20px;
+}
+#fb-login i{
+    font-size: 20px;
+    position: relative;
+    top: 4px;
+    right: 4px;
+}
+#forgot{
+    display: block;
+    text-decoration-line: none;
+    color: black;
+    margin: 30px;
+}
+#signup-box{
+    width: 350px;
+    height: 62px;
+    background-color: white;
+    padding-top: 20px;
+    border: solid 1px rgba(0, 0, 0, 0.126);
+}
+#signup-box a{
+    color: rgba(0, 0, 255, 0.792);
+    text-decoration-line: none;
+}
+#getapp-box span{
+    display: block;
+    margin: 20px;
+}
+#getapp-box #one img{
+    width: 110.76px;
+    height: 43.6px; 
+    margin-right: 5px;
+}
+#getapp-box #two img{
+    width: 110.76px;
+    height: 43.6px; 
+    margin-left: 5px;
+}

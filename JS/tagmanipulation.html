@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1 align="center">Tag manipulation</h1>
+    <hr>
+    <h3 id="head3">Skills</h3>
+    <ol>
+        <li>Java</li>
+        <li>Web</li>
+        <li>Sql</li>
+    </ol> -->
+
+    <label>Name</label> <input type="text" id="name">
+    <label>DOB</label> <input type="date" id="dob">
+
+    <button onclick="sample1()">check output</button>
+
+    <h1 id="result"></h1>
+    <!-- if header is not present then we can crate it in the function -->
+    <script>
+        function sample1()
+        {
+            let name = document.getElementById("name").value;
+            let dob = document.getElementById("dob").value;
+
+            let currentYear = new Date ().getFullYear();
+            let bornYear = new Date(dob).getFullYear();
+
+            let age = currentYear - bornYear;
+
+            if (age < 0)
+            {
+                alert("Invalid input");
+                return;
+            }
+
+            // document.getElementById("result").innerText = `Hello ${name} your age is ${age} years`;
+            document.getElementById("result").textContent = `Hello ${name} your age is ${age} years`;
+            
+        }
+
+        // function sample()
+        // {
+        //     let h3 = document.getElementById("head3");
+        //     // console.log(h3);
+        //     console.log(h3.innerText);
+        //     h3.innerText = "Technical skills";
+        //     console.log(h3.innerText);
+        // }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+section{
+    background-color: gold;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div{
+    font-size: 70px;
+    animation-name: heartbeat;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+@keyframes heartbeat {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(2);
+        text-shadow: 20px 20px 10px rgb(0, 0, 0, 0.669);
+    }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+<!-- if div is empty or null then only add child tags or else don't add the child nodes -->
+    </div>
+    <button onclick="sample()">check output</button>
+    <script>
+        function sample()
+        {
+            let h1 = document.createElement("h1");
+            // h1.appendChild(`hello gunda`);   //not possible
+            h1.append(`hello gunda`);
+            let div = document.getElementById("container");
+            // div.appendChild(h1);     //not possible
+            if (div.firstElementChild == null)
+            {
+                div.append(h1);
+            }
+            else
+            {
+                alert(`already present`);
+            }
+        }
+        // function sample()
+        // {
+        //     let h1 = document.createElement("h1");
+        //     h1.innerText = `hello gundanna!!!`;
+        //     let div = document.getElementById("container");
+        //     div.append(h1);
+        //     // div.appendChild(h1);
+        // }
+    </script>
+</body>
+</html>

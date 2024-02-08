@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            margin: 50px auto;
+            border: dotted 50px black;
+            border-top: solid 3px black;
+            border-right: solid 3px black;
+            border-radius: 50%;
+            animation: loading 3s 1 ;
+            animation-timing-function: linear
+        }
+
+        /* div{
+            width: 200px;
+            height: 200px;
+            margin: 50px auto;
+            border: solid 2px black;
+            animation: loading 3s infinite;
+            animation-timing-function: linear
+        } */
+
+        @keyframes loading {
+            0%{
+                transform: rotate(0deg);
+            }
+            50%{
+                transform: rotate(180deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+
+        /* div{
+            background-color: aquamarine;
+            width: 200px;
+            height: 200px;
+            margin: 50px auto;
+            border: solid 3px black;
+            border-radius: 10px;
+            animation-name: anime;
+            animation-duration: 20s;
+        } */
+        @keyframes anime {
+            0%{
+                background-color: aqua;
+                border-radius: 0%;
+                /* transform: rotate(0deg); */
+                transform: skew(0deg);
+            }
+            20%{
+                background-color: black;
+                border-radius: 50%;
+                /* transform: rotate(360deg); */
+                transform: skew(360deg);
+            }
+            40%{
+                background-color: red;
+                border-radius: 0%;
+                /* transform: rotate(0deg); */
+                transform: skew(0deg);
+            }
+            60%{
+                background-color: blue;
+                border-radius: 50%;
+                /* transform: rotate(360deg); */
+                transform: skew(360deg);
+            }
+            80%{
+                background-color: purple;
+                border-radius: 0%;
+                /* transform: rotate(0deg); */
+                transform: skew(0deg);
+            }
+            100%{
+                background-color: skyblue;
+                border-radius: 50%;
+                /* transform: rotate(360deg); */
+                transform: skew(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div></div>
+
+</body>
+</html>
